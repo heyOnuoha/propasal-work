@@ -6,13 +6,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale = 1" />
         
-        <link rel="stylesheet" type="text/css" href="css/log-in.css" />
+        <link rel="stylesheet" type="text/css" href="css/log-in.css" media="screen"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     </head> 
     <body>
         <center>
             <section>
-            
+                <div class="form">
+                    <header>
+                        <h1>Sign In</h1>
+                    </header>
+                    <div id="form_container">
+                        <center>
+                            <form name="log_in" action="#">
+                                <p>Username</p><br>
+                                <input name="name_field" value="username" type="text"/>
+                                <p>Password</p><br>
+                                <input name="password_field" value="password" type="password" />
+                            </form>
+                        </center>                      
+                    </div>                 
+                </div>              
             </section>
         </center>       
     </body>
