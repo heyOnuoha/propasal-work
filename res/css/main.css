@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    
+    background-image: url("../images/img_parallax.jpg");
+    
+    height: 50%;
+    
+    position: relative;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bi {
+    background: black;
+    height: 100%;
+    opacity: 0.6;
+}
