@@ -21,4 +21,25 @@ header {
     background: black;
     height: 100%;
     opacity: 0.6;
+    z-index: 10;
+}
+
+.header_container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logo {
+    position: relative;
+/*    background: black;*/
+    height: 100%; 
+    padding: 20px;
+    
+    box-sizing: border-box;
+    float: left;
 }
