@@ -101,3 +101,15 @@ display: none;
   z-index: 5;
   opacity: 0.9;
 }
+@media only screen and (max-width:1900px){
+  #image{
+    width: 1900px;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    object-fit: cover;
+
+  }
+}
