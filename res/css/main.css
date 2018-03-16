@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.6;
+    
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    
+    background-image: url("../images/backgoung.jpg");
+    
+    height: 50%;
+    
+    position: relative;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-bottom: 3px solid orange;
+}
+
+/** Nav Properties **/
+
+nav {
+    position: relative;
+    max-width: 60%;
+    margin: 2px;
+    margin-left: 2%;
+    padding: 40px;
+    float: left;
+}
+
+nav ul {
+    text-decoration: none;
+    border-bottom: 1px solid orange;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: auto 25px;
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: orange;
+    font-weight: 500;
+}
+
+/** Nav Properties end **/
+
+#req-details {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 9%;
+    float: left;
+    
+    background: black;
+} 
+
+#req-details button {
+    width: auto;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid orange;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#create_account {
+    opacity: 0.1;
+}
+
+
+
+.bi {
+    background: black;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 10;
+}
+
+.header_container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    
+    width: 100%;
+    box-sizing: border-box;
+    
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, 0.2) , 0 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+#logo {
+    position: relative;
+/*    background: black;*/
+    height: 100%; 
+    padding: 20px;
+    
+    box-sizing: border-box;
+    float: left;
+}
+
+.drop_down {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
