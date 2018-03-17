@@ -13,14 +13,14 @@ body, html {
 }
 
 #center1 {
-    height: 100%;
+    height: 100%; 
 }
 
 #right {
     float: left;
     height: 100%;
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 /*    background: #FD7272;*/
@@ -63,6 +63,10 @@ input[type="text"], input[type="password"] {
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2) , 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+input:focus-within {
+    border: 1px transparent #000;
+}
+
 input[class="s_box"] {
     width: 10%;
     height: 35px;
@@ -72,13 +76,10 @@ input[class="s_box"] {
 
 
 .btn_login {
-    position: relative;
     width: 20%;
     height: 45px;
-    margin-right: 50px;
-    margin-top: 30px;
-    float: right;
-    padding: 20 30px;
+    margin: 30px auto;
+    margin-left: 60%;
     font-weight: 500;
     background: #eb2f06;
     border: none;
@@ -88,8 +89,12 @@ input[class="s_box"] {
 }
 
 #bottom_layer {
+    width: 10%;
     padding: 30px;
-    margin: 50px auto;
+    margin: 20px auto;
+    margin-right: 30px;
+    color: #ffaf40;
+    font-weight: bold;
 }
 
 .lil_link a {
@@ -121,11 +126,15 @@ input[class="s_box"] {
 footer {
     width: 100%;
     height: auto;
-    padding: 10px 0px;
-    padding-bottom: 0px;
+    background: black;
+    color: white;
+    padding: 30px;
     font-size: 14px;
     border-top: 1px #e74c3c solid;
     text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .clear {

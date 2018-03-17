@@ -2,19 +2,9 @@ $(document).ready(LoginBehavior);
 
 function LoginBehavior() {
     
-    $("#mail").on({    
+    $(".i_3").on({    
         focusin : function() {
             $(this).css("border-bottom", "3px solid #eb2f06");
-        },
-        
-        focusout : function() {
-            $(this).delay("slow").css("border-bottom", "3px solid #ffaf40"); 
-        }
-    });
-    
-    $("#pass").on({
-        focusin : function() {
-            $(this).delay("slow").css("border-bottom", "3px solid #eb2f06");
         },
         
         focusout : function() {
@@ -38,8 +28,3 @@ function LoginBehavior() {
 
     console.log("hello");
 }
-
-setInterval(function() {
-    console.log(window.outerHeight, " ", window.outerWidth);
-}, 1000);
-
