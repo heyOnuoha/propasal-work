@@ -36,7 +36,7 @@ body, html {
     background-repeat: repeat;
     background-position: center;
     background-size: 100%;
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5) , 0 10px 10px 10px rgba(0, 0, 0, 0.5);
+/*    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5) , 0 10px 10px 10px rgba(0, 0, 0, 0.5);*/
 /*    background: linear-gradient(to right, #e74c3c, #ee5253);*/
 }
 
@@ -51,7 +51,8 @@ body, html {
     padding: 0 10px;
     margin: 0;
     box-sizing: border-box;
-    background: #FD7272;
+/*    background: #FD7272;*/
+    background: #ffaf40;
 }
 
 #top {
@@ -94,7 +95,7 @@ input[type="text"], input[type="password"] {
     margin-bottom: 60px;
     padding-left: 40px;
     border: none;
-    border-bottom: 3px solid #e74c3c;
+    border-bottom: 3px solid #ffaf40;
     border-radius: 5px 0px 0px 5px;
     box-sizing: border-box;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2) , 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
@@ -103,21 +104,39 @@ input[type="text"], input[type="password"] {
 input[type="checkbox"] {
     float: left;
     margin: 40px auto;
+    margin-left: 10px;
     width: 30%;
     height: 30%;
     transform: scale(2);
     appearance: none;
-    padding: 10px;
 }
 
-#container form button {
+#check_box {
+    float: left;
+    width: 65%;   
+    margin-left: 5px;
+}
+
+#check_box p {
+    margin-top: 36px;
+    margin-left: 0px;
+    margin-right: 60px;
+    font-size: 13px;
+}
+
+.btn_login {
+    position: relative;
+    width: 20%;
+    height: 45px;
     margin-right: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
     float: right;
-    padding: 15 20px;
-    background: #e74c3c;
+    padding: 20 30px;
+    font-weight: 500;
+    background: #eb2f06;
     border: none;
     border-radius: 4px;
+    box-sizing: border-box;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3) , 0 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -141,6 +160,19 @@ input[type="checkbox"] {
     margin: 50px auto;
 }
 
+.lil_link a {
+    color: wheat;
+    margin: 0px 2%;
+}
+
+.lil_link {
+    color: wheat;
+}
+
+.lil_link a:hover {
+    color: brown;
+}
+
 #bottom_layer p {
     margin: 30px auto;
     font-weight: 400;
@@ -152,6 +184,36 @@ input[type="checkbox"] {
 
 #container form button:hover {
     cursor: pointer;
+}
+
+.drop_down {
+    display: none;
+}
+
+#top nav {
+    width: 100%;
+}
+
+.top_nav {
+    list-style: none;
+}
+
+.top_nav li {
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.top_nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.top_nav li a:hover {
+    color: #ffaf40;
+}
+
+#top nav ul {
+    
 }
 
 .clear {
