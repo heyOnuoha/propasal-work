@@ -7,27 +7,73 @@
         <meta name="viewport" content="width=device-width, initial-scale = 1" />
         
         <link rel="stylesheet" type="text/css" href="css/log-in.css" media="screen"/>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="js/log-in.js" type="text/javascript"></script>
+        
     </head> 
     <body>
-        <center>
-            <section>
-                <div class="form">
-                    <header>
-                        <h1>Sign In</h1>
-                    </header>
-                    <div id="form_container">
-                        <center>
-                            <form name="log_in" action="#">
-                                <p>Username</p><br>
-                                <input name="name_field" value="username" type="text"/>
-                                <p>Password</p><br>
-                                <input name="password_field" value="password" type="password" />
-                            </form>
-                        </center>                      
-                    </div>                 
-                </div>              
-            </section>
-        </center>       
+        <center id="center1">
+            <div id="left">
+                <header id="top" class="opaque">
+                    <nav>
+                        <ul class="top_nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Ministries</a></li>
+                            <ul class="drop_down">
+                             <li><a href="#">Challenge Bookshops<a/></li>
+                             <li><a href="#">Cinema Today (CineVan)<a/></li>
+                             <li><a href="#">Mobile Bookshops<a/></li>
+                             <li><a href="#">Local Follow up<a/></li>
+                             <li><a href="#">Prison Ministry<a/></li>
+                             <li><a href="#">Prison Chaplain<a/></li>
+                             <li><a href="#">Young Searchers League<a/></li>
+                             <li><a href="#">Mail Box Club<a/></li>
+                             <li><a href="#">Conferences<a/></li>
+                             <li><a href="#">Counseling Services<a/></li>
+                            </ul>
+                            <li><a href="">Bookshop Locations</a></li>
+                                <ul class="drop_down">
+                                 <li><a href="#">ACCRA<a/></li>
+                                 <li><a href="#">TEMA<a/></li>
+                                 <li><a href="#">ABETIFI<a/></li>
+                                 <li><a href="#">KUMASI<a/></li>
+                                 <li><a href="#">SUNYANI<a/></li>
+                                 <li><a href="#">CAPE COAST<a/></li>
+                                 <li><a href="#">TAMALE<a/></li>
+                                </ul>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="trans_area">
+                    
+                </div>       
+            </div>
+        
+            <div id="right">
+                <div id="container">
+                    <img src="image/anyone.png" />
+                    <form action="#" name="form1">
+                        <div class="form_input">
+                            <input id="mail" type="text" placeholder="E-mail" />
+                        </div>  
+                        <div class="form_input">
+                            <input id="pass" type="password" placeholder="Password" />
+                        </div>
+                        <div id="check_box">
+                            <input class="color_scheme" type="checkbox" value="Keep me signed in" width="100" height="50" checked/> <p class="lil_link">Keep me logged in</p>
+                        </div>                      
+                        <button class="btn_login" type="button">Login</button>
+                    </form>   
+                     <div class="clear"></div>
+                </div>
+                <span id="bottom_layer">
+                    <p>Already have an account ? <span class="lil_link"><a href="#">Sign Up</a></span> </p>
+                </span>           
+            </div>
+        </center>
+        <div class="clear"></div>
     </body>
 </html>
