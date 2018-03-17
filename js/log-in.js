@@ -1,21 +1,25 @@
 $(document).ready(LoginBehavior);
 
 function LoginBehavior() {
-
-    $("#mail").focusin(function() {
-        $(this).css("border-bottom", "3px solid #eb2f06");
+    
+    $("#mail").on({    
+        focusin : function() {
+            $(this).css("border-bottom", "3px solid #eb2f06");
+        },
+        
+        focusout : function() {
+            $(this).delay("slow").css("border-bottom", "3px solid #ffaf40"); 
+        }
     });
-
-    $("#mail").focusout(function() {
-       $(this).delay("slow").css("border-bottom", "3px solid #ffaf40"); 
-    });
-
-    $("#pass").focusin(function() {
-        $(this).delay("slow").css("border-bottom", "3px solid #eb2f06");
-    });
-
-    $("#pass").focusout(function() {
-       $(this).delay("slow").css("border-bottom", "3px solid #ffaf40"); 
+    
+    $("#pass").on({
+        focusin : function() {
+            $(this).delay("slow").css("border-bottom", "3px solid #eb2f06");
+        },
+        
+        focusout : function() {
+            $(this).delay("slow").css("border-bottom", "3px solid #ffaf40"); 
+        }
     });
     
     $(".btn_login").mouseenter(function() {
@@ -34,4 +38,8 @@ function LoginBehavior() {
 
     console.log("hello");
 }
+
+setInterval(function() {
+    console.log(window.outerHeight, " ", window.outerWidth);
+}, 1000);
 
