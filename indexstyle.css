@@ -338,6 +338,12 @@ color: white;
   vertical-align: middle;
   margin-bottom: 10;
 }
+#login a{
+	
+	text-decoration:none;
+	color:white;
+}
+
 #menbar{
   display: none;
 }
