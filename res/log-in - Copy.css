@@ -29,7 +29,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 60%;
     box-sizing: border-box;
 /*    border-right: 1px solid #000;*/
 /*    background: #e74c3c;*/
@@ -43,6 +43,17 @@ body, html {
 
 #left bg {
     
+}
+
+#right {
+    float: left;
+    height: 100%;
+    width: 40%;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+/*    background: #FD7272;*/
+    background: #ffaf40;
 }
 
 #top {
@@ -59,18 +70,15 @@ body, html {
 }
 
 #container {
-    width: 50%;
+    width: 90%;
     height: 60%;
     text-align: center;
     margin: 0 auto;
-    margin: 6%;
-    margin-bottom: 0px;
-    margin-top: 0;
+    margin-left: 6%;
+    margin-top: 40%;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.2) , 0 20px 20px 0 rgba(0, 0, 0, 0.2);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
 }
 
 #container img {
@@ -131,7 +139,6 @@ input[type="checkbox"] {
     border-radius: 4px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3) , 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-    border: none;
 }
 
 #top_level {

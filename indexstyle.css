@@ -1,7 +1,9 @@
 *{
   margin:0 auto;
   padding:  0 auto;
+  font-family: 'Work Sans', sans-serif;
 }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateY(-50%);
