@@ -94,27 +94,25 @@ input[type="text"], input[type="password"] {
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2) , 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-input[type="checkbox"] {
-    float: left;
-    margin: 40px auto;
-    margin-left: 10px;
-    width: 30%;
-    height: 30%;
+#checker{
     transform: scale(2);
-    appearance: none;
+    margin-right: 10px;
 }
 
 #check_box {
     float: left;
-    width: 65%;   
-    margin-left: 5px;
+    width: 60%;   
+    margin: 40px auto;
+    margin-left: 0px;
+    margin-bottom: 0px;
+   
 }
 
 #check_box p {
     margin-top: 36px;
     margin-left: 0px;
     margin-right: 60px;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .btn_login {
