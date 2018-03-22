@@ -12,11 +12,13 @@ function LoginBehavior() {
         }
     });
     
-    $(".btn_login").mouseenter(function() {
-        $(this).css("background", "#ffaf40"); 
-    });
-    
-    $(".btn_login").mouseout(function() {
-       $(this).css("background", "#eb2f06"); 
+    $(".btn_login").on ({
+        mouseenter: function() {
+            $(this).css("background", "#ffaf40"); 
+        },
+        
+        mouseout: function() {
+            $(this).css("background", "#eb2f06"); 
+        }
     });
 }

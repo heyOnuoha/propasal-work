@@ -6,6 +6,7 @@
     
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body, html {
@@ -32,10 +33,12 @@ body, html {
     width: 100%;
     box-sizing: border-box;
 /*    border-right: 1px solid #000;*/
-/*    background: #e74c3c;*/
+    background: #ffaf40;
+/*
     background-image: url("../image/2015+Covers+Collage.3.jpg");
     background-repeat: repeat;
     background-position: center;
+*/
     background-size: 100%;
 /*    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5) , 0 10px 10px 10px rgba(0, 0, 0, 0.5);*/
 /*    background: linear-gradient(to right, #e74c3c, #ee5253);*/
@@ -63,7 +66,6 @@ body, html {
     height: 60%;
     text-align: center;
     margin: 0 auto;
-    margin: 6%;
     margin-bottom: 0px;
     margin-top: 0;
     border-radius: 4px;
@@ -104,8 +106,7 @@ input[type="text"], input[type="password"] {
     width: 60%;   
     margin: 40px auto;
     margin-left: 0px;
-    margin-bottom: 0px;
-   
+    margin-bottom: 0px;  
 }
 
 #check_box p {
@@ -182,7 +183,7 @@ input[type="text"], input[type="password"] {
     padding: 0px;
     margin: 0px;
     padding: 0px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
     z-index: 5;
 }
 
@@ -218,6 +219,10 @@ input[type="text"], input[type="password"] {
 }
 
 .drop_down {
+    display: none;
+}
+
+#top {
     display: none;
 }
 
