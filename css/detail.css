@@ -83,6 +83,14 @@ font-family: sans-serif;
   margin-top: 35px;
   margin-bottom: 35px;
 }
+#bookimages{
+	height:200px;
+	width:130px;
+}
+#load img{
+	height:200px;
+	width:200px;
+}
 #desc{
   height: 30px;
   width: 150px;

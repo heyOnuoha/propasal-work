@@ -1,3 +1,4 @@
+<?php include './app/db.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -136,7 +137,7 @@
     </div >
     <div class="books">
           <?php
-          include './app/db.php';
+          
           $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 8";
           $result = mysqli_query($connect, $sql);
           while ($rows = mysqli_fetch_array($result)) {
@@ -144,7 +145,6 @@
             $title = $rows['title'];
             $sbn = $rows['sbn'];
             $author = $rows['author'];
-            $edition = $rows['edition'];
             $binding = $rows['binding'];
             $id = $rows['id'];
             ?>
@@ -152,7 +152,7 @@
     <div class="book" id="book" >
       <form method="POST" action="app/detail.php?action=<?php echo $id ?>">
       <i id="load"></i>
-      <img src="<?php echo "$image"; ?>" alt="book" id="bookimage">
+      <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages">
       <p id="title"><?php echo "$title"; ?></p>
       <p>
         <dl class="det">
@@ -160,8 +160,6 @@
           <dd><?php echo "$sbn"; ?></dd><br>
           <dt>Author(s):</dt>
           <dd><?php echo "$author"; ?></dd><br>
-          <dt>Edition:</dt>
-          <dd><?php echo "$edition"; ?></dd><br>
           <dt>Binding:</dt>
           <dd><?php echo "$binding"; ?></dd><br>
         </dl>
@@ -240,6 +238,7 @@
             <p id="title2">Arts & Photography</p>
             <br>
               <br>
+			  
            <li> <a href="#">Design & Decorative Arts</a> </li>
            <li> <a href="#">Art History & Criticism Textbooks</a> </li>
            <li> <a href="#">Other Media</a> </li>
@@ -286,7 +285,54 @@
 
          </ul>
      </div>
+  <div class="cate">
+         <ul>
+            <p id="title2">Arts & Photography</p>
+            <br>
+              <br>
+           <li> <a href="#">Design & Decorative Arts</a> </li>
+           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
+           <li> <a href="#">Other Media</a> </li>
+           <p id="more">+more</p>
 
+         </ul>
+     </div>
+	  <div class="cate">
+         <ul>
+            <p id="title2">Arts & Photography</p>
+            <br>
+              <br>
+           <li> <a href="#">Design & Decorative Arts</a> </li>
+           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
+           <li> <a href="#">Other Media</a> </li>
+           <p id="more">+more</p>
+
+         </ul>
+     </div>
+	  <div class="cate">
+         <ul>
+            <p id="title2">Arts & Photography</p>
+            <br>
+              <br>
+           <li> <a href="#">Design & Decorative Arts</a> </li>
+           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
+           <li> <a href="#">Other Media</a> </li>
+           <p id="more">+more</p>
+
+         </ul>
+     </div>
+	  <div class="cate">
+         <ul>
+            <p id="title2">Arts & Photography</p>
+            <br>
+              <br>
+           <li> <a href="#">Design & Decorative Arts</a> </li>
+           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
+           <li> <a href="#">Other Media</a> </li>
+           <p id="more">+more</p>
+
+         </ul>
+     </div>
 
 
      <div class="seeall">
