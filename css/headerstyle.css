@@ -1,0 +1,170 @@
+*{
+  margin:0 auto;
+  padding:  0 auto;
+
+}
+
+.center i{
+  border: solid #c23616;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.container{
+position: fixed;
+top: 0;
+z-index: 10;
+text-align: center;
+width: 100%;
+
+}
+
+.wrapper{}
+.left{
+
+ display: inline-block;
+}
+.center{
+  display: inline-block;
+  margin-left: 20px;
+}
+.center ul li{
+  display: inline-block;
+  list-style: none;
+
+}
+.center ul li a{
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  text-transform: capitalize;
+
+}
+.center ul li a:hover{
+  color: orange;
+}
+.right{
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 30px;
+
+}
+.right ul li {
+  display: inline-block;
+  list-style:none;
+  margin-left: 15px;
+  color: white;
+
+}
+
+.down{
+  transform: rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  margin-left: 3px;
+
+}
+#ministiedd
+{
+}
+#ministiedd li{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+
+
+}
+#ministiedd li a:hover{
+
+color: orange;
+}
+#ministiedd a{
+  font-size: 13px;
+  border-bottom: 10px;
+  margin-left: 5px;
+}
+.menu-bar{
+background-color: black;
+padding: 10px 10px;
+ width: 100%;
+}
+#menbar{
+   font-size: 20px;
+   color: white;
+   display: inline-block;
+   margin-right: 25px;
+   border: 1px solid white;
+   padding: 5px;
+   vertical-align: middle;
+   display: none;
+
+}
+#span{
+  color: white;
+  font-size: 25px;
+}
+#account{
+
+  height: 30px;
+  width: 120px;
+  line-height: 30px;
+}
+#shoppincars{
+  color: red;
+  margin-left: -0px;
+  margin-top: -15px;
+  border-radius: 250px;
+  display: inline-block;
+  z-index: 100;
+  cursor: pointer;
+
+
+}
+
+#login{
+  border: 1px solid white;
+  height: 30px;
+  width:50px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding-left: 2px;
+  background-color:#26dac3;
+  border-color: #26dac3;
+}
+#bookshopdb
+{
+position: absolute;
+display: block;
+width: 120px;
+border: 1px solid black;
+margin-top: 5px;
+background-color: #212121;
+color: white;
+text-align: left;
+z-index:100;
+margin-left: 155px;
+display: none;
+font-size: 15px;
+}
+
+#bookshopdb li{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  text-align: left;
+font-size: 15px;
+
+}
+#bookshopdb  a:hover{
+
+color: orange;
+font-size: 15px;
+text-transform: capitalize;
+text-transform: lowercase;
+}
+#bookshopdb a{
+  font-size: 13px;
+  border-bottom: 10px;
+  margin-left: 5px;
+}
