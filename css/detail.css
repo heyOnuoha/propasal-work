@@ -1,0 +1,206 @@
+body{
+  overflow-x: hidden;
+}
+.bookhistory{
+  width: 70%;
+  text-align:left;
+  margin-top: 100px;
+  display: inline-block;
+  margin-left: 30px;
+
+
+}
+.bookimage{
+  height: 400px;
+  width: 250px;
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+}
+.bookimage img{
+ height: 350px;
+ width: 200px;
+ box-shadow: 2px 2px 2px 2px ;
+color: gray;
+}
+.bookimage img:hover{
+
+}
+.descriptions{
+  height: 400px;
+  display: inline-block;
+  margin-left: 20px;
+  float: left;
+}
+.descriptions span{
+  display: inline-block;
+  color: black;
+  font-weight:bold;
+}
+.descriptions li{
+  list-style-type:none;
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: gray;
+
+}
+#descriptiontext{
+  margin: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: black;
+  font-family: sans-serif;
+  padding: 5px;
+  width: 600px;
+
+}
+#quantity{
+  width: 35px;
+  margin-bottom: 30px;
+  padding-left: 2px;
+  font-size: bold;
+  color: red;
+  box-sizing: border-box;
+
+}
+.boookdescription{
+  float: left;
+  text-align: left;
+  width: 500px;
+  margin-top: 50px;
+  margin-left:50px;
+}
+#booktitle{
+  text-align: left;
+  font-size: 19px;
+font-family: sans-serif;
+   color: #e74c3c;
+}
+.realatedbooks{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+#bookimages{
+	height:200px;
+	width:130px;
+}
+#load img{
+	height:200px;
+	width:200px;
+}
+#desc{
+  height: 30px;
+  width: 150px;
+  background-color:white;
+  border: 1px solid lightgray;
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+
+}
+#descs{
+  height: 30px;
+  width: 150px;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+}
+#theform{
+  margin-top: 30px;
+  text-align: left;
+}
+#click{
+  margin-right: 20px;
+  height: 31px;
+  color: white;
+  width: 100px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border-color: #e74c3c;
+  background-color:#e74c3c;
+  cursor: pointer;
+  border: none;
+
+}
+#paradescription{
+text-align: left;
+
+}
+.middle{
+  margin-top: 40px;
+}
+.these{}
+.these p{
+  text-align: center;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.books{
+  width: 93%;
+  margin: 2%;
+  display: inline-block;
+  text-align: left;
+
+}
+.book{
+display: inline-block;
+margin-left: 80px;
+margin-bottom: 60px;
+
+}
+.book img{
+  text-align: center;
+}
+
+.det dt{
+  display:inline-table;
+  font-weight: bold;
+  margin-top: 7px;
+  margin-right: 10px;
+  color: gray;
+
+}
+.det dd{
+  display:inline-table;
+  font-family: sans-serif;
+  color: blue;
+  font-size: 10px;
+}
+dl{
+
+}
+.btst{
+  margin-top: 20px;
+  height: 35px;
+  width:100px;
+  border: 1px solid #26dac3;
+  color: white;
+  background-color:#26dac3;
+  float: left;
+  font-size: 14px;
+  line-height: 35px;
+  border-radius: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btst:hover{
+  opacity: 0.8;
+
+}

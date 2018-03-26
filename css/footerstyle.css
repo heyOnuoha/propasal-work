@@ -1,0 +1,42 @@
+.legone{
+
+ width: 100%;
+  background-color: #212121;
+  height: 500px;
+
+}
+.legswos{
+  padding-top: 50px;
+  display: inline-block;
+  height: 200px;
+}
+
+.firstf{ display: inline-block;
+margin-right: 10px;
+}
+.firstf li {
+  list-style: none;
+  margin-left: 10px;
+
+}
+.firstf a{
+  color:#26dac3 ;
+  text-decoration: none;
+}
+.footerimage{
+text-align: center;
+margin-top: 20px;
+color: white;
+}
+.footerimage img{
+  height: 80px;
+  width: 65px;
+  vertical-align: middle;
+  margin-bottom: 10;
+}
+#title4{
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+  display: inline-block;
+}

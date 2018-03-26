@@ -19,12 +19,4 @@ function LoginBehavior() {
     $(".btn_login").mouseout(function() {
        $(this).css("background", "#eb2f06"); 
     });
-    
-    $("#checker").mouseenter(function() {
-        $(this).css("border", "3px solid #eb2f06");
-    });
-
-    console.log(mail.getAttribute("placeholder"));
-
-    console.log("hello");
 }
