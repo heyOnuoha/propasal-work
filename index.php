@@ -65,8 +65,8 @@
       </div>
       <div class="right" id="mb">
        <ul>
-         <li id="account">Create Accoint</li>
-         <li id="login">Login</li>
+         <li id="account"><a href="#">Create Account</a></li>
+         <li id="login"><a href="log-in.html">Login</a></li>
        </ul>
 
     </div>
@@ -148,9 +148,9 @@
             $binding = $rows['binding'];
             $id = $rows['id'];
             ?>
-
-    <div class="book" id="book" >
-      <form method="POST" action="app/detail.php?action=<?php echo $id ?>">
+    <div id="book_container">
+         <div class="book" id="book" >
+      <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
       <i id="load"></i>
       <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages">
       <p id="title"><?php echo "$title"; ?></p>
@@ -166,10 +166,12 @@
         <div class="btst">
         <input type="submit" name="submit" value="Learne more" id="b"><span>&#187;</span>
 
-      </div>
+        </div>
       </p>
     </form>
     </div>
+    </div>
+   
     <?php
     }
     ?>
