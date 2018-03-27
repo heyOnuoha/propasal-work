@@ -138,7 +138,7 @@
     <div class="books">
           <?php
           
-          $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 8";
+          $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 10";
           $result = mysqli_query($connect, $sql);
           while ($rows = mysqli_fetch_array($result)) {
             $image = $rows['image'];

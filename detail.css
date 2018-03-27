@@ -10,6 +10,14 @@ body{
 
 
 }
+
+#title {
+    max-width: 320px;
+    max-height: 18px;
+    overflow: hidden;
+   
+}
+
 .bookimage{
   height: 400px;
   width: 250px;
