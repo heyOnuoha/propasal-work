@@ -188,8 +188,8 @@ animation: 3s ease-out 0s 1 slideInFromLeft;
   margin-bottom: 10px;
 }
 .books{
-  width:100%;
-   margin: 0 auto;
+  width:90%;
+   margin-left:  8%;
   display: inline-block;
   text-align: left;
 /*  padding-left: 20px;*/
@@ -676,7 +676,7 @@ text-transform: lowercase;
   }
   #aboutimage
   {
-    height: 430px;
+    height: 400px;
     width: 100%;
     position: absolute;
     -webkit-filter: brightness(35%);
