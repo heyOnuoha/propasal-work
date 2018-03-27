@@ -158,9 +158,9 @@
         <dl class="det">
           <dt>SBN:</dt>
           <dd ><?php echo "$sbn"; ?></dd>
-          <dt>Author(s):</dt>
-          <dd class="specialDet"><?php echo "$author"; ?></dd>
-          <dt>Binding:</dt>
+          <dt>Author(s):</dt><br>
+          <dd class="specialDet"><?php echo "$author"; ?></dd><br>
+          <dt>Binding:</dt><br>
           <dd class="specialDet"><?php echo "$binding"; ?></dd>
         </dl>
         <div class="btst">
