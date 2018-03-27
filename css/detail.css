@@ -83,6 +83,10 @@ font-family: sans-serif;
   margin-top: 35px;
   margin-bottom: 35px;
 }
+
+#booksubmit{
+    border: none;
+}
 #bookimages{
 	height:200px;
 	width:130px;

@@ -25,8 +25,8 @@
 }
 
 #book_container {
-    width: 200px;
-    margin-right: 10px;
+    width: 180px;
+    margin-right: 50px;
     margin-bottom: 5px;
     box-sizing: border-box;
     padding: 20px;
@@ -627,6 +627,9 @@ text-transform: lowercase;
 #bookimages{
 	height:200px;
 	width:130px;
+    object-fit: fill;
+    min-height: 200px;
+    min-width: 130px;
 }
 @media only screen and (max-width:1280px){
   .container{text-align:none;}
@@ -638,7 +641,7 @@ text-transform: lowercase;
     width: 90%;
     display: inline-block;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 10%;
      
 
   }
@@ -685,8 +688,9 @@ text-transform: lowercase;
     object-position: center;
   }
     #book_container{
-       
+       margin-right: 10px;
     }
+    
     
 }
 
@@ -876,7 +880,7 @@ text-align:left;
     width: 90%;
     display: inline-block;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 10%;
      
 
   }

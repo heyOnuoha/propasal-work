@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script type="text/javascript" src="myjs/js.js"> </script>
+ <script type="text/javascript" sr c="myjs/js.js"> </script>
 
 
     <title> CEG GHANA </title>
@@ -138,7 +138,7 @@
     <div class="books">
           <?php
           
-          $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 8";
+          $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 10";
           $result = mysqli_query($connect, $sql);
           while ($rows = mysqli_fetch_array($result)) {
             $image = $rows['image'];
