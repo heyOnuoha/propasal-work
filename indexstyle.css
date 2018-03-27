@@ -873,11 +873,14 @@ text-align:left;
     color:#fe8315;
   }
   .books{
-  
+    width: 90%;
     display: inline-block;
     text-align: left;
+    margin-left: 8%;
+     
 
   }
+
   .book{
   display: inline-block;
   margin-left: 20px;
