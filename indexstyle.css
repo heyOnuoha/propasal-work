@@ -1,7 +1,9 @@
 *{
   margin:0 auto;
   padding:  0 auto;
+  font-family: 'Work Sans', sans-serif;
 }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateY(-50%);
@@ -10,8 +12,26 @@
     transform: translateX(0);
   }
 }
-body{
-  overflow-x: hidden;
+
+#title {
+    max-width: 320px;
+    max-height: 18px;
+    overflow: hidden;
+   
+}
+
+.book_case {
+   font-size: 14px;
+}
+
+#book_container {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    display:inline-block;
+    
 }
 
 .center i{
@@ -124,12 +144,12 @@ animation: 3s ease-out 0s 1 slideInFromLeft;
   text-align:left;
 }
 .line{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   display: inline-block;
   height: 130px;
-  width: 240px;
+  width: 250px;
   color: white;
-  border:1px solid rgba(0, 0, 0, 0.4);
+  border:1px solid rgba(0, 0, 0, 0);
   padding-left: 80px;
   padding-top: 30px;
   box-sizing: border-box;
@@ -168,15 +188,18 @@ animation: 3s ease-out 0s 1 slideInFromLeft;
   margin-bottom: 10px;
 }
 .books{
-  width: 93%;
-  margin: 2%;
+  width:100%;
+   margin: 0 auto;
   display: inline-block;
   text-align: left;
+/*  padding-left: 20px;*/
+   
+   
 
 }
 .book{
 display: inline-block;
-margin-left: 80px;
+/*margin-left: 80px;*/
 margin-bottom: 60px;
 
 }
@@ -196,7 +219,7 @@ margin-bottom: 60px;
   display:inline-table;
   font-family: sans-serif;
   color: blue;
-  font-size: 10px;
+  font-size: 15px;
 }
 dl{
 
@@ -204,7 +227,7 @@ dl{
 .btst{
   margin-top: 20px;
   height: 35px;
-  width:100px;
+  width:120px;
   border: 1px solid #26dac3;
   color: white;
   background-color:#26dac3;
@@ -218,6 +241,13 @@ dl{
 }
 .btst:hover{
   opacity: 0.8;
+
+}
+#b{
+  border: none;
+    background-color:#26dac3;
+    color: white;
+
 }
 .aboutus{}
 .about{
@@ -240,11 +270,12 @@ dl{
 margin-bottom: 20px;
  padding-top: 10px;
 text-align: left;
-margin}
+margin-right:30px;
+}
 .numbers
 {
-  height: 10px;
-  width: 50px;
+  height: 20px;
+  width: 60px;
   line-height: 0px;
   color: white;
   background-color: orange;
@@ -253,6 +284,8 @@ margin}
   vertical-align: middle;
   display: inline-block;
   border-radius: 100%;
+  text-align:center;
+  font-size:9px;
 
 
 }
@@ -280,6 +313,7 @@ margin}
 .cate  a{
   text-decoration: none;
   color: white;
+  font-size:12px;
 }
 .cate a:hover{
   color: orange;
@@ -338,12 +372,6 @@ color: white;
   vertical-align: middle;
   margin-bottom: 10;
 }
-#login a{
-	
-	text-decoration:none;
-	color:white;
-}
-
 #menbar{
   display: none;
 }
@@ -366,13 +394,15 @@ color: white;
   color: white;
   width:200px;
   background-color: #212121;
-  padding-left: 20px;
   border-radius: 5px;
   float: left;
+  text-align:center;
+  font-size:16px;
 }
 #title2:hover{
-  background-color: orange
+  background-color: orange;
 }
+
 #title5{
   height: 200px;
   width: 300px;
@@ -396,7 +426,7 @@ color: white;
 }
 #aboutimage
 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   position: absolute;
   -webkit-filter: brightness(35%);
@@ -416,7 +446,12 @@ color: white;
   margin-top: 20px;
   margin-right: 10px;
 }
-#b{}
+#b{
+  border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+}
 #title{
   margin-top: 10px;
   margin-bottom: 5px;
@@ -534,13 +569,25 @@ text-transform: lowercase;
 }
 
 #account{
-  border: 1px solid white;
-  height: 30px;
-  width: 120px;
+  border: 2px solid orange;
+  width: 140px;
+  height: 35px;
   line-height: 30px;
-  border-radius: 3px;
-  padding-left: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0px;
 }
+
+#account:hover {
+    cursor: pointer;
+    background: orange;
+}
+
+#account a {
+    color: white;
+    text-decoration: none;
+}
+
 #login{
   border: 1px solid white;
   height: 30px;
@@ -551,6 +598,16 @@ text-transform: lowercase;
   background-color:#26dac3;
   border-color: #26dac3;
 }
+
+#login a {
+    color: white;
+    text-decoration: none;
+}
+
+#login:hover {
+    
+}
+
 #image{
    width: 100%;
    height: 750px;
@@ -567,7 +624,10 @@ text-transform: lowercase;
  overflow: hidden;
  box-sizing: border-box;
 }
-
+#bookimages{
+	height:200px;
+	width:130px;
+}
 @media only screen and (max-width:1280px){
   .container{text-align:none;}
   .wrapper{margin-left:20px;}
@@ -576,10 +636,14 @@ text-transform: lowercase;
   }
   .books{
     width: 90%;
-    margin-left: 7%;
     display: inline-block;
     text-align: left;
+    margin-left: 8%;
+     
 
+  }
+  .categories{
+	  height:900px;
   }
   .right{
     margin-left: -10px;
@@ -588,6 +652,7 @@ text-transform: lowercase;
   .line{
     margin-right: -3px;
   }
+  
   #title2{
     height: 30px;
     line-height: 30px;
@@ -601,7 +666,7 @@ text-transform: lowercase;
     text-align: center;
   }
   #para5{
-    width: 200px;
+    width: 300px;
     text-align: left;
     font-size: 12px;
     margin-top: 0px;
@@ -609,6 +674,20 @@ text-transform: lowercase;
 
 
   }
+  #aboutimage
+  {
+    height: 430px;
+    width: 100%;
+    position: absolute;
+    -webkit-filter: brightness(35%);
+    filter: brightness(35%);
+    object-fit: cover;
+    object-position: center;
+  }
+    #book_container{
+       
+    }
+    
 }
 
 @media only screen and (max-width:1024px){
@@ -751,6 +830,9 @@ text-align:left;
   margin-left: 50px;
 
   }
+  body{
+    overflow-x: hidden;
+  }
 
   .foating{
 
@@ -791,8 +873,7 @@ text-align:left;
     color:#fe8315;
   }
   .books{
-    width:100%;
-    margin-left: 10%;
+  
     display: inline-block;
     text-align: left;
 
