@@ -72,7 +72,7 @@
     </div>
     </div>
     </div>
-      <hr id="hr" >
+<!--      <hr id="hr" >-->
 <section>
     <div class="text">
        <p>Buy a text book . Save a bundle <br>
@@ -153,15 +153,15 @@
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
       <i id="load"></i>
       <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages">
-      <p id="title"><?php echo "$title"; ?></p>
+      <p class="title" id="title"><?php echo "$title"; ?></p>
       <p>
         <dl class="det">
           <dt>SBN:</dt>
-          <dd><?php echo "$sbn"; ?></dd><br>
+          <dd ><?php echo "$sbn"; ?></dd>
           <dt>Author(s):</dt>
-          <dd><?php echo "$author"; ?></dd><br>
+          <dd class="specialDet"><?php echo "$author"; ?></dd>
           <dt>Binding:</dt>
-          <dd><?php echo "$binding"; ?></dd><br>
+          <dd class="specialDet"><?php echo "$binding"; ?></dd>
         </dl>
         <div class="btst">
         <input type="submit" name="submit" value="Learne more" id="b"><span>&#187;</span>
@@ -412,6 +412,6 @@
       <img src="image/ecghanalogo.png" alt="cegghana logo" ><span style="font-size:9px;">&copy; 2018 Challenge Enterprises of Ghana</span>
     </div>
 </div>
-<script type="text/javascript" src="myjs/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

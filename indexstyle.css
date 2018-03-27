@@ -13,7 +13,7 @@
   }
 }
 
-#title {
+.title {
     max-width: 320px;
     max-height: 18px;
     overflow: hidden;
@@ -220,6 +220,7 @@ margin-bottom: 60px;
   font-family: sans-serif;
   color: blue;
   font-size: 15px;
+    
 }
 dl{
 
@@ -452,7 +453,7 @@ color: white;
     cursor: pointer;
     font-size: 13px;
 }
-#title{
+.title{
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: bold;
