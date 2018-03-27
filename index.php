@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script type="text/javascript" src="myjs/js.js"> </script>
+ <script type="text/javascript" sr c="myjs/js.js"> </script>
 
 
     <title> CEG GHANA </title>
