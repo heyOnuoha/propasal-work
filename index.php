@@ -148,6 +148,7 @@
             $binding = $rows['binding'];
             $id = $rows['id'];
             ?>
+            
     <div id="book_container">
          <div class="book" id="book" >
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
