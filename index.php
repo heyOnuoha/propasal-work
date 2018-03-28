@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script type="text/javascript" sr c="myjs/js.js"> </script>
+ <script type="text/javascript" src="myjs/js.js"> </script>
 
 
     <title> CEG GHANA </title>
@@ -36,8 +36,7 @@
               <li><a href="">Home</a></li>
               <li><a href="#" id="min">Ministries <i class="down"></i> </a></li>
               <ul id="ministiedd" style="font-size:13px;">
-                <br>
-                 <li><a href="">Challenge Bookshops<a/></li><br>
+                 <li><a href="" style="padding-left:15px;">Challenge Bookshops<a/></li>
                  <li><a href="">Cinema Today (CineVan)<a/></li><br>
                  <li><a href="">Mobile Bookshops<a/></li><br>
                  <li><a href="">Local Follow up<a/></li><br>
@@ -50,7 +49,7 @@
               </ul>
               <li><a href="#" id="mins">Bookshop Locations<i class="down"></i></a></li>
               <ul id="bookshopdb">
-                 <li><a href="">Accra<a/></li>
+                 <li><a href="" style="padding-left:15px;">Accra<a/></li>
                  <li><a href="">Tema<a/></li>
                  <li><a href="">Abetifi<a/></li>
                  <li><a href="">Kumasi<a/></li>
@@ -137,7 +136,7 @@
     </div >
     <div class="books">
           <?php
-          
+
           $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 10";
           $result = mysqli_query($connect, $sql);
           while ($rows = mysqli_fetch_array($result)) {
@@ -152,16 +151,17 @@
          <div class="book" id="book" >
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
       <i id="load"></i>
-      <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages">
+      <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages" >
       <p class="title" id="title"><?php echo "$title"; ?></p>
       <p>
         <dl class="det">
-          <dt>SBN:</dt>
-          <dd ><?php echo "$sbn"; ?></dd>
+
+          <!--<dt>SBN:</dt>
+          <dd ><?php echo "$sbn"; ?></dd> -->
           <dt>Author(s):</dt><br>
-          <dd class="specialDet"><?php echo "$author"; ?></dd><br>
-          <dt>Binding:</dt><br>
-          <dd class="specialDet"><?php echo "$binding"; ?></dd>
+          <dd class="specialDet"><?php echo "$author"; ?></dd>
+        <!--  <dt>Binding:</dt><br>
+          <dd class="specialDet"><?php echo "$binding"; ?></dd> -->
         </dl>
         <div class="btst">
         <input type="submit" name="submit" value="Learne more" id="b"><span>&#187;</span>
@@ -171,7 +171,7 @@
     </form>
     </div>
     </div>
-   
+
     <?php
     }
     ?>
@@ -185,22 +185,40 @@
 <!--  start about us page-->
 
 <div class="aboutus ">
-  <img src="image/abou.jpg" alt="" id="aboutimage">
+  <img src="image/abou.jpg" alt="" id="aboutimage" >
   <div class="about">
     <center>
     <p>ABOUT US</p>
     <div class="p1">
-    <p class="numbers">1</p><span id="span2">Incididunt ut labore et dolore</span>
-    <p id="para5">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+    <p class="numbers"> <b>Challenge Enterprises of GHANA </b> </p>
+    <p id="para5">For the past 50 plus years, Challenge Enterprises of Ghana (CEG) has been the leading name in the distribution of Christian literature in the country of Ghana and offers the best in Christian reading.
+    <br>
+  <br>
+Challenge distributes over 90% of the Bibles and Christian literature through 18 retail shops across the country as well as through a fleet of eight "cinevans" which also function as mobile bookshops in remote villages in the 10 regions of Ghana. CEG offers all types and versions of the Bible and the widest variety and choice of Biblically balanced literature to the general public and the Christian community in particular.
+ <br><br>
+ In addition to books and bookstores, Challenge serves through:
+<div class="lists">
+  <ul>
+   <li>a prison ministry in eight prisons</li>
+   <li>free counseling services</li>
+   <li>eight "cinevans" showing gospel films and providing a mobile bookstore <br>
+     in all the regions of Ghana</li>
+ <li>free Bible corrspondence courses</li>
+ <li>free tract distribution</li>
+ <li>pastors and church leaders conferences in Accra, Kumasi and Takoradi</li>
+</ul>
+</div>
+</p>
     </div>
-    <div class="p1">
+
+  <!--  <div class="p1">
     <p class="numbers">2</p><span id="span2">Incididunt ut labore et dolore</span>
     <p id="para5">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
     </div>
     <div class="p1">
     <p class="numbers">3</p><span id="span2">Incididunt ut labore et dolore</span>
     <p id="para5">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
-    </div>
+  </div>-->
   </center>
   </div>
 </div>
@@ -240,7 +258,7 @@
             <p id="title2">Arts & Photography</p>
             <br>
               <br>
-			  
+
            <li> <a href="#">Design & Decorative Arts</a> </li>
            <li> <a href="#">Art History & Criticism Textbooks</a> </li>
            <li> <a href="#">Other Media</a> </li>
