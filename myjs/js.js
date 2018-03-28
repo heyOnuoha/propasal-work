@@ -1,8 +1,11 @@
 $(document).ready(function(){
   $("#min").click(function(){
-    $("#ministiedd").toggle("slow");
+    $("#ministiedd").toggle();
+    $("#bookshopdb").hide();
+    console.log("it is working");
   });
   $("#mins").click(function(){
-    $("#bookshopdb").toggle("slow");
+    $("#bookshopdb").toggle();
+    $("#ministiedd").hide();
   });
 });

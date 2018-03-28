@@ -17,7 +17,7 @@
     max-width: 320px;
     max-height: 18px;
     overflow: hidden;
-   
+
 }
 
 .book_case {
@@ -29,9 +29,8 @@
     margin-right: 50px;
     margin-bottom: 5px;
     box-sizing: border-box;
-    padding: 20px;
     display:inline-block;
-    
+
 }
 
 .center i{
@@ -193,8 +192,10 @@ animation: 3s ease-out 0s 1 slideInFromLeft;
   display: inline-block;
   text-align: left;
 /*  padding-left: 20px;*/
-   
-   
+margin-top: 40px;
+margin-bottom: 40px;
+
+
 
 }
 .book{
@@ -210,7 +211,7 @@ margin-bottom: 60px;
 .det dt{
   display:inline-table;
   font-weight: bold;
-  margin-top: 7px;
+  margin-top: 2px;
   margin-right: 10px;
   color: gray;
 
@@ -220,13 +221,13 @@ margin-bottom: 60px;
   font-family: sans-serif;
   color: blue;
   font-size: 15px;
-    
+
 }
 dl{
 
 }
 .btst{
-  margin-top: 20px;
+  margin-top: 10px;
   height: 35px;
   width:120px;
   border: 1px solid #26dac3;
@@ -250,12 +251,15 @@ dl{
     color: white;
 
 }
-.aboutus{}
+.aboutus{
+
+}
 .about{
   position: relative;
   z-index: 10;
   width: 100%;
     box-sizing: border-box;
+    padding: 20px;
 }
 
 .about p{
@@ -264,41 +268,40 @@ dl{
   color: white;
   padding-top: 30px;
   padding-bottom: 10px;
+  font-family: Times;
+  text-transform: capitalize;
 
 
 }
-.p1{display: inline-block;
-margin-bottom: 20px;
- padding-top: 10px;
-text-align: left;
-margin-right:30px;
+.p1{
+padding: 0px;
+width: 80%;
 }
 .numbers
 {
-  height: 20px;
-  width: 60px;
-  line-height: 0px;
-  color: white;
-  background-color: orange;
-  border: 1px solid orange;
-  float: left;
-  vertical-align: middle;
-  display: inline-block;
-  border-radius: 100%;
-  text-align:center;
-  font-size:9px;
-
+text-transform: uppercase;
+font-size: 20px;
+text-align: center;
+color:#212121;
+margin-top: -10px;
 
 }
-.categories
-{
+.numbers b{
+color:#c0392b;
+}
+.numbers b i{
+  font-size: 25px;
+  font-weight: 900;
+}
+.categories{
   width: 100%;
-  height: 600px;
   background-color: #1abfa4;
   margin-top: 10px;
   box-sizing: border-box;
 }
-.subcategories{}
+.subcategories{
+  padding: 30px 15px;
+}
 .cate{
   margin-top: 50px;
   display: inline-block;
@@ -338,10 +341,8 @@ border: 2px solid #26dac3;
    border: 1px solid#26dac3;
 }
 .legone{
-
  width: 100%;
-  background-color: #212121;
-  height: 500px;
+background-color: #212121;
 
 }
 .legswos{
@@ -372,6 +373,15 @@ color: white;
   width: 65px;
   vertical-align: middle;
   margin-bottom: 10;
+}
+.lists{
+text-align: left;
+color: white;
+margin-top: 10px;
+}
+.lists li{
+  margin-top: 10px;
+  font-family: Trebuchet MS;
 }
 #menbar{
   display: none;
@@ -427,13 +437,14 @@ color: white;
 }
 #aboutimage
 {
-  height: 450px;
   width: 100%;
   position: absolute;
   -webkit-filter: brightness(35%);
   filter: brightness(35%);
   object-fit: cover;
   object-position: center;
+  height: 650px;
+
 }
 #bookimage:hover
 {
@@ -441,11 +452,16 @@ color: white;
   cursor: pointer;
 }
 #para5{
-  width: 350px;
+font-size: 18px;
+font-family:Trebuchet MS;
+text-align: left;
+font-weight: normal;
+
+}
+#para5 li{
   text-align: left;
-  font-size: 15px;
-  margin-top: 20px;
-  margin-right: 10px;
+  color:white;
+  list-style-type: disc;
 }
 #b{
   border: none;
@@ -503,18 +519,17 @@ border:none;
 #ministiedd
 {
 position: absolute;
-display: block;
-width: 220px;
-border: 1px solid black;
+width: 200px;
+border: 1px solid #212121;
 margin-top: 5px;
 background-color: #212121;
 color: white;
 text-align: left;
 z-index:100;
-
 display: none;
-padding: 5px;
+padding: 10px;
 padding-bottom: 10px;
+border-radius: 5px;
 }
 #ministiedd li{
   margin-top: 10px;
@@ -537,7 +552,7 @@ color: orange;
 position: absolute;
 display: block;
 width: 120px;
-border: 1px solid black;
+border: 1px solid #212121;
 margin-top: 5px;
 background-color: #212121;
 color: white;
@@ -546,6 +561,7 @@ z-index:100;
 margin-left: 155px;
 display: none;
 font-size: 15px;
+border-radius: 5px;
 }
 
 #bookshopdb li{
@@ -606,7 +622,7 @@ text-transform: lowercase;
 }
 
 #login:hover {
-    
+
 }
 
 #image{
@@ -631,6 +647,11 @@ text-transform: lowercase;
     object-fit: fill;
     min-height: 200px;
     min-width: 130px;
+    cursor: pointer;
+
+}
+#bookimages:hover{
+  opacity: 0.5;
 }
 @media only screen and (max-width:1280px){
   .container{text-align:none;}
@@ -643,12 +664,10 @@ text-transform: lowercase;
     display: inline-block;
     text-align: left;
     margin-left: 10%;
-     
+
 
   }
-  .categories{
-	  height:900px;
-  }
+  .categories{}
   .right{
     margin-left: -10px;
     margin-right: -10px;
@@ -656,7 +675,7 @@ text-transform: lowercase;
   .line{
     margin-right: -3px;
   }
-  
+
   #title2{
     height: 30px;
     line-height: 30px;
@@ -670,17 +689,10 @@ text-transform: lowercase;
     text-align: center;
   }
   #para5{
-    width: 300px;
-    text-align: left;
-    font-size: 12px;
-    margin-top: 0px;
-    margin-right: 10px;
-
-
   }
   #aboutimage
   {
-    height: 400px;
+    height: 680px;
     width: 100%;
     position: absolute;
     -webkit-filter: brightness(35%);
@@ -689,10 +701,10 @@ text-transform: lowercase;
     object-position: center;
   }
     #book_container{
-       margin-right: 10px;
+       margin-right: 25px;
     }
-    
-    
+
+
 }
 
 @media only screen and (max-width:1024px){
@@ -704,13 +716,6 @@ text-transform: lowercase;
 
 }
 #para5{
-  width: 200px;
-  text-align: left;
-  font-size: 12px;
-  margin-top: 0px;
-  margin-right: 10px;
-
-
 }
 #span{
   font-size: 25px;
@@ -733,12 +738,12 @@ margin-left: -25px;
 margin-top: -20%;
 }
 .line{
-  background-color: rgba(0, 0, 0, 0.4);
+
   display: inline-block;
   height: 150px;
   width: 200px;
   color: white;
-  border:1px solid rgba(0, 0, 0, 0.4);
+
   padding-left: 70px;
   padding-top: 30px;
   box-sizing: border-box;
@@ -746,35 +751,16 @@ margin-top: -20%;
   border-radius: 5px;
 
 }
-.legone{
-
-width: 100%;
-background-color: #212121;
-height: 450px;
-
-}
+.legone{}
 .firstf{
   margin-left: 5px;
 }
-.categories
-{
-  width: 100%;
-  height: 800px;
-  background-color: #1abfa4;
-  margin-top: 10px;
-  box-sizing: border-box;
-}
+.categories{}
 .p1{
  margin: 10px;
 }
 #numbers{
 
-}
-
-#para5{
-
-  font-size: 12px;
-  width: 250px;
 }
 .firstf{ display: inline-block;
 margin-right: 0px;
@@ -824,6 +810,9 @@ text-align:left;
 
 
 }
+#aboutimage{
+  height: 750px;
+}
 }
 @media only screen and (max-width:800px){
   .float{
@@ -846,12 +835,12 @@ text-align:left;
   }
   .line{
       text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+
     display: inline-block;
     height: 130px;
     width: 250px;
     color: white;
-    border:1px solid rgba(0, 0, 0, 0.4);
+
     padding-top: 30px;
     box-sizing: border-box;
     margin: 20px;
@@ -882,7 +871,8 @@ text-align:left;
     display: inline-block;
     text-align: left;
     margin-left: 10%;
-     
+
+
 
   }
 
@@ -911,34 +901,18 @@ text-align:left;
 
 
   }
-  .p1{display: inline-block;
+  .p1{
+  display: inline-block;
   margin-bottom: 0px;
-   padding-top: 10px;
+  padding-top: 10px;
   text-align: center;
 
 }
   .numbers
   {
-    height: 10px;
-    width: 50px;
-    line-height: 0px;
-    color: white;
-    background-color: orange;
-    border: 1px solid orange;
-    float: left;
-    vertical-align: middle;
-    display: inline-block;
-    border-radius: 100%;
 
   }
-  .categories
-  {
-    width: 100%;
-    height: 700px;
-    background-color: #1abfa4;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
+  .categories{}
   .subcategories{}
   .cate{
     margin-top: 5opx;
@@ -955,13 +929,7 @@ text-align:left;
   .cate li a{
     font-size: 12px;
   }
-  .legone{
-
-   width: 100%;
-    background-color: #212121;
-    height: 500px;
-
-  }
+  .legone{}
   .legswos{
     padding-top: 50px;
     display: inline-block;
@@ -1008,16 +976,9 @@ text-align:left;
      object-fit: cover;
   }
   #para5{
-    width: 200px;
-    text-align: left;
-    font-size: 12px;
-    margin-top: 0px;
-    margin-right: 10px;
-
-
-  }
+}
   #aboutimage{
-    height: 450px;
+
   }
   #title5{
     height: 150px;
@@ -1027,6 +988,7 @@ text-align:left;
     vertical-align: middle;
     margin-left:40px;
   }
+
 
 }
 
@@ -1081,7 +1043,7 @@ text-align:left;
   display: inline-block;
   width: 100%;
   animation: 3s ease-out 0s 1 slideInFromLeft;
-  margin-left: 50px;
+  margin-left: 20px;
 
   }
 
@@ -1093,15 +1055,15 @@ text-align:left;
   }
   .line{
       text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+
     display: inline-block;
     height: 130px;
     width: 250px;
     color: white;
-    border:1px solid rgba(0, 0, 0, 0.4);
+
     padding-top: 30px;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     margin-left:30px;
 
@@ -1161,34 +1123,12 @@ text-align:left;
 
 
   }
-  .p1{display: inline-block;
-  margin-bottom: 0px;
-   padding-top: 10px;
-  text-align: center;
-
+  .p1{
 }
   .numbers
   {
-    height: 10px;
-    width: 50px;
-    line-height: 0px;
-    color: white;
-    background-color: orange;
-    border: 1px solid orange;
-    float: left;
-    vertical-align: middle;
-    display: inline-block;
-    border-radius: 100%;
-
   }
-  .categories
-  {
-    width: 100%;
-    height: 700px;
-    background-color: #1abfa4;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
+  .categories{}
   .subcategories{}
   .cate{
     margin-top: 5opx;
@@ -1205,13 +1145,7 @@ text-align:left;
   .cate li a{
     font-size: 12px;
   }
-  .legone{
-
-   width: 100%;
-    background-color: #212121;
-    height: 500px;
-
-  }
+  .legone{}
   .legswos{
     padding-top: 50px;
     display: inline-block;
@@ -1258,18 +1192,14 @@ text-align:left;
      object-fit: cover;
   }
   #para5{
-    width: 200px;
-    text-align: left;
-    font-size: 12px;
-    margin-top: 0px;
-    margin-right: 10px;
-
-
   }
   #aboutimage{
-    height: 770px;
+    height: 880px;
     z-index: 0;
   }
+ .books{
+   margin-left: 3%;
+ }
   #title5{
     height: 150px;
     width: 250px;
@@ -1278,5 +1208,184 @@ text-align:left;
     vertical-align: middle;
     margin-left:40px;
   }
+  .text{
+    margin-top: 80px;
+    text-align: center;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
 
+  }
+  .text p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .text p b{
+    color: #26dac3;
+    font-size:25px;
+  }
+
+}
+@media only screen and (max-width:400px){
+  #account{
+    display: none;
+  }
+  .center{
+ display:none;
+ background-color: #212121;
+ z-index: 100;
+ width: 220px;
+ height: 100vh;
+ margin-top: 50px;
+
+  }
+  .center ul{
+    text-align: left;
+    float: left;
+    display: inline-grid;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .center li{
+    box-sizing: border-box;
+    border-bottom: 0.1px solid lightgray;
+    width: 100%;
+}
+  .center a{
+  color: white;
+  text-align: left;
+
+  }
+  .text{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+
+  }
+  .text p{
+    font-size: 20px;
+  }
+  .text b{
+    font-size: 16px;
+  }
+  #image{
+    height: 1000px;
+  }
+ #seachsubmit{
+   width: 150px;
+ }
+ .seache{
+   margin-top: 20px;
+ }
+ .float{
+ margin-top: 50px;
+ margin-bottom: 10px;
+ display: inline-block;
+ width: 100%;
+ animation: 1s ease-out 0s 1 slideInFromLeft;
+ margin-left: -20px;
+
+ }
+
+
+ .foating{
+
+   display: inline-block;
+   text-align:left;
+ }
+ .line{
+  text-align: center;
+   display: inline-block;
+   height: 130px;
+   width: 250px;
+   color: white;
+
+   padding-top: 30px;
+   box-sizing: border-box;
+   margin: 10px;
+   border-radius: 5px;
+   margin-left:30px;
+
+ }
+ .line i{
+   display: inline-block;
+ }
+ .line h3{
+   margin: 5px;
+   font-weight: bold;
+ }
+ .line h4{
+   font-weight: normal;
+ }
+ .line h5{
+   color: #26dac3;
+   margin: 5px;
+   cursor: pointer;
+ }
+ .line h5:hover{
+   color:#fe8315;
+ }
+ .books{
+   width:100%;
+   display: inline-block;
+   text-align: left;
+   margin-left: 70px;
+
+ }
+ .book{
+ display: inline-block;
+ margin-bottom: 60px;
+
+ }
+ .aboutus{
+   z-index: 0;
+ }
+
+ .about{
+   position: relative;
+   z-index: 10;
+   width: 100%;
+   box-sizing: border-box;
+   margin-bottom: 0px;
+     margin-left: -0px;
+     z-index: 0;
+
+ }
+
+ .about p{
+   text-align: center;
+   font-size: 18px;
+   color: white;
+   padding-top: 30px;
+   padding-bottom: 10px;
+
+
+ }
+ .numbers{
+   font-size: 17px;
+ }
+ .p1{
+   width: 95%;
+ }
+ #para5{
+   font-size: 15px;
+   font-family: Times;
+ }
+ .lists li{
+   margin-top: 0px;
+ }
+ #aboutimage{
+   height: 930px;
+ }
+ #span{
+   cursor: pointer;
+ }
+ #menbar{
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: middle;
+
+ }
 }
