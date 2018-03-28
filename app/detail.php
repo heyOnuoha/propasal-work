@@ -18,8 +18,8 @@ if (isset($_POST['submit'])) {
        $sbn = $rowse['sbn'];
        $author = $rowse['author'];
        $binding = $rowse['binding'];
-	   $price = $rowse['Price'];
-	   $description = $rowse['description'];
+	     $price = $rowse['Price'];
+	     $description = $rowse['description'];
      }
 }
 

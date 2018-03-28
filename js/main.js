@@ -11,8 +11,6 @@ $(document).ready(function() {
 
         if(specText.length > maxTextLength) {
             specialDets[i].innerHTML = subSpec;
-            
-            console.log(true);
         }
     }
 });

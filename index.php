@@ -81,7 +81,7 @@
 
     <div class="seache">
       <div class="seachebar">
-        <form class="" action="index.html" method="post">
+        <form class="" action="#" method="post">
           <input type="search" name="seache" placeholder="Seach by ISBN, TItle, or Author" id="seach">
           <input type="submit" name="seache" value="Find a Book" id="seachsubmit">
         </form>
@@ -148,7 +148,7 @@
             $binding = $rows['binding'];
             $id = $rows['id'];
             ?>
-            
+
     <div id="book_container">
          <div class="book" id="book" >
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
