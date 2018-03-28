@@ -680,7 +680,7 @@ text-transform: lowercase;
     height: 30px;
     line-height: 30px;
     color: white;
-    width:`100px;
+    width: 100px;
     box-sizing: border-box;
     background-color: #212121;
     border-radius: 5px;
@@ -952,7 +952,7 @@ text-align:left;
   height: 30px;
   line-height: 30px;
   color: white;
-  width:`100px;
+  width: 100px;
   box-sizing: border-box;
   background-color: #212121;
   border-radius: 5px;
@@ -989,8 +989,6 @@ text-align:left;
     margin-left:40px;
   }
 
-
-}
 
 @media only screen and (max-width:790px){
   .menu-bar{
@@ -1168,7 +1166,7 @@ text-align:left;
   height: 30px;
   line-height: 30px;
   color: white;
-  width:`100px;
+  width:100px;
   box-sizing: border-box;
   background-color: #212121;
   border-radius: 5px;
@@ -1388,4 +1386,5 @@ text-align:left;
     vertical-align: middle;
 
  }
+}
 }
