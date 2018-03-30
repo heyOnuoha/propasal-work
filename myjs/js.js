@@ -8,4 +8,8 @@ $(document).ready(function(){
     $("#bookshopdb").toggle();
     $("#ministiedd").hide();
   });
+  $("#span").click(function(){
+    $(".center").toggle();
+    $(".center").css('display', 'block');
+  });
 });

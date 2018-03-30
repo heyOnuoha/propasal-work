@@ -54,7 +54,9 @@ text-align: center;
 width: 100%;
 
 }
-
+#extra{
+  padding-left: 13px;
+}
 .wrapper{ margin-left: 100px; margin-right: 20px;}
 .menu-babr{}
 .image img{
@@ -998,7 +1000,7 @@ text-align:left;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #212121;
+    background-color: black;
     height: 50px;
     line-height: 50px;
     margin-bottom: 500px;
@@ -1360,12 +1362,14 @@ text-align:left;
    padding-bottom: 10px;
 
 
+
  }
  .numbers{
    font-size: 17px;
  }
  .p1{
    width: 95%;
+   font-family: sans-serif;
  }
  #para5{
    font-size: 15px;
@@ -1387,5 +1391,91 @@ text-align:left;
     margin-right: 25px;
     vertical-align: middle;
 
+ }
+
+ .center i{
+   border: solid #c23616;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+ }
+ .down{
+   transform: rotate(-35deg);
+   -webkit-transform:rotate(-35deg);
+   margin-left: 3px;
+
+ }
+ #ministiedd
+ {
+ position: absolute;
+ width: 200px;
+ border: 1px solid black;
+ background-color:black;
+ color: white;
+ text-align: left;
+ z-index:100;
+ display: none;
+ border-radius: 5px;
+ margin-left: 150px;
+ margin-top: -70px;
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+ #ministiedd li{
+   text-align: left;
+   padding: 0;
+   margin: 0;
+   border: none;
+
+ }
+ #ministiedd li a:hover{
+
+ color: orange;
+ }
+ #ministiedd a{
+   font-size: 13px;
+   margin-left: 5px;
+   padding: 0;
+   margin: 0;
+ }
+ #bookshopdb
+ {
+ position: absolute;
+ width: 100px;
+ border: 1px solid black;
+ background-color:black;
+ color: white;
+ text-align: left;
+ z-index:100;
+ display: none;
+ border-radius: 5px;
+ margin-left: 200px;
+ border-radius: 5px;
+
+ }
+
+ #bookshopdb li{
+   text-align: left;
+   font-size: 13px;
+   padding: 0;
+   margin: 0;
+   border: none;
+
+ }
+ #bookshopdb  a:hover{
+
+ color: orange;
+ font-size: 15px;
+ text-transform: capitalize;
+
+ }
+ #bookshopdb a{
+   font-size: 13px;
+   padding: 0;
+   margin: 0;
+
+ }
+ #extra{
+   padding-left: 0px;
  }
 }

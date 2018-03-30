@@ -10,7 +10,48 @@
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script type="text/javascript" src="myjs/js.js"> </script>
+ <script type="text/javascript" >
+ $(document).ready(function(){
+   $("#min").click(function(){
+     $("#ministiedd").toggle();
+     $("#bookshopdb").hide();
+
+   });
+   $("#mins").click(function(){
+     $("#bookshopdb").toggle();
+     $("#ministiedd").hide();
+   });
+   $("#span").click(function(){
+     $(".center").toggle();
+
+   });
+
+
+function changimage(){
+var imagescrs = document.getElementById('aboutimage');
+var imagescr = imagescrs['scr'];
+console.log(imagescr);
+var currentImage = imagescr.substring(imagescr.lastIndexOf("/") + 1, imagescr.lastIndexOf("/")+ 2 );
+var newImage = "/image/" + (Number(currentImage) + 1) + ".jpg";
+document.getElementById('aboutimage').setAttribute("scr", newImage);
+
+}
+
+setInterval(changimage, 500);
+
+console.log(currrentImage + newImage + imageScr);
+
+
+
+
+
+
+
+
+
+ });
+
+ </script>
 
 
     <title> CEG GHANA </title>
@@ -36,7 +77,7 @@
               <li><a href="">Home</a></li>
               <li><a href="#" id="min">Ministries <i class="down"></i> </a></li>
               <ul id="ministiedd" style="font-size:13px;">
-                 <li><a href="" style="padding-left:15px;">Challenge Bookshops<a/></li>
+                 <li><a href=""id="extra">Challenge Bookshops<a/></li>
                  <li><a href="">Cinema Today (CineVan)<a/></li><br>
                  <li><a href="">Mobile Bookshops<a/></li><br>
                  <li><a href="">Local Follow up<a/></li><br>
@@ -49,7 +90,7 @@
               </ul>
               <li><a href="#" id="mins">Bookshop Locations<i class="down"></i></a></li>
               <ul id="bookshopdb">
-                 <li><a href="" style="padding-left:15px;">Accra<a/></li>
+                 <li><a href="" id="extra">Accra<a/></li>
                  <li><a href="">Tema<a/></li>
                  <li><a href="">Abetifi<a/></li>
                  <li><a href="">Kumasi<a/></li>
@@ -62,7 +103,7 @@
               <li><a href="">Contact </a></li>
            </ul>
       </div>
-      <div class="right" id="mb">
+      <div class="right" >
        <ul>
          <li id="account"><a href="#">Create Account</a></li>
          <li id="login"><a href="log-in.html">Login</a></li>
@@ -185,7 +226,7 @@
 <!--  start about us page-->
 
 <div class="aboutus ">
-  <img src="image/abou.jpg" alt="" id="aboutimage" >
+  <img id="aboutimage" src="image/1.jpg" alt=""  >
   <div class="about">
     <center>
     <p>ABOUT US</p>
@@ -431,5 +472,7 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
     </div>
 </div>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" scr="myjs/main.js"></script>
+
   </body>
 </html>
