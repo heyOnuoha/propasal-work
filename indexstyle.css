@@ -29,11 +29,6 @@
   list-style: none;
 }
 
-#image_slider img {
-  width: 100%;
-}
-
-
 .title {
     max-width: 320px;
     max-height: 18px;
@@ -86,6 +81,7 @@ filter: brightness(10%);
 
 }
 .left{
+  margin-top: 20px;
   display: inline-block;
   vertical-align: middle;
 
@@ -149,8 +145,8 @@ filter: brightness(10%);
   height: 80px;
 
   line-height: 80px;
-  background-color:#fe8315;
-  border-color:#fe8315;
+  background-color:rgba(254,131,21, 0.7);
+  border-color:rgba(254,131,21, 0.7);
   border-radius: 5px;
 }
 .float{
@@ -681,6 +677,7 @@ font-size: 15px;
   .container{text-align:none;}
   .wrapper{margin-left:20px;}
   .left{
+    margin-top: 20px;
     margin-left: -40px;
   }
   .books{
@@ -736,6 +733,7 @@ font-size: 15px;
 .wrapper{
 }
 .left{
+  margin-top: 0px;
   margin-left: -80px;
 
 }
@@ -1027,6 +1025,7 @@ text-align:left;
     z-index: 200;
   }
   .left{
+  margin-top: 0px;
   float: left;
   margin-left: 10px;
   }

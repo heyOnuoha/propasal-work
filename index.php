@@ -20,9 +20,9 @@
       <div class="image-slider-wrapper">
         <ul id="image_slider">  
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/1.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
         </ul>
