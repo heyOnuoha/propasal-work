@@ -72,10 +72,4 @@ function animate(opts){
     }, opts.dalay || 17);
 }
 
-function slideT(liItems) {
-
-    var currentLeft = ul[0].offsetWidth;
-    var nextLeft;
-}
-
 window.onload = init;
