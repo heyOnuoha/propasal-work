@@ -18,8 +18,8 @@ if (isset($_POST['submit'])) {
        $sbn = $rowse['sbn'];
        $author = $rowse['author'];
        $binding = $rowse['binding'];
-	   $price = $rowse['Price'];
-	   $description = $rowse['description'];
+	     $price = $rowse['Price'];
+	     $description = $rowse['description'];
      }
 }
 
@@ -96,37 +96,37 @@ $(document).ready(function(){
         <div class="books">
               <?php
 
-              $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 4";
-              $result = mysqli_query($connect, $sql);
-              while ($rows = mysqli_fetch_array($result)) {
-                $image = $rows['image'];
-                $title = $rows['title'];
-                $sbn = $rows['sbn'];
-                $author = $rows['author'];
-                $binding = $rows['binding'];
-                ?>
+                $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 4";
+                $result = mysqli_query($connect, $sql);
+                while ($rows = mysqli_fetch_array($result)) {
+                  $image = $rows['image'];
+                  $title = $rows['title'];
+                  $sbn = $rows['sbn'];
+                  $author = $rows['author'];
+                  $binding = $rows['binding'];
+              ?>
 
-        <div class="book" id="book" >
-          <form>
-          <i id="load"></i>
-          <img src="<?php echo "../image/".$image; ?>" alt="CEG GHANA BOOKS" id="bookimages">
-          <p id="title"><?php echo "$title"; ?></p>
-          <p>
-            <dl class="det">
-              <dt>SBN:</dt>
-              <dd><?php echo "$sbn"; ?></dd><br>
-              <dt>Author(s):</dt>
-              <dd><?php echo "$author"; ?></dd><br>
-              <dt>Binding:</dt>
-              <dd><?php echo "$binding"; ?></dd><br>
-            </dl>
-            <div class="btst">
-            <input type="submit" name="sumit" value="Learne more" id="booksubmit"><span>&#187;</span>
+            <div class="book" id="book" >
+              <form>
+              <i id="load"></i>
+              <img src="<?php echo "../image/".$image; ?>" alt="CEG GHANA BOOKS" id="bookimages">
+              <p id="title"><?php echo "$title"; ?></p>
+              <p>
+                <dl class="det">
+                  <dt>SBN:</dt>
+                  <dd><?php echo "$sbn"; ?></dd><br>
+                  <dt>Author(s):</dt>
+                  <dd><?php echo "$author"; ?></dd><br>
+                  <dt>Binding:</dt>
+                  <dd><?php echo "$binding"; ?></dd><br>
+                </dl>
+                <div class="btst">
+                <input type="submit" name="sumit" value="Learne more" id="booksubmit"><span>&#187;</span>
 
-          </div>
-          </p>
-        </form>
-        </div>
+              </div>
+              </p>
+            </form>
+            </div>
         <?php
         }
         ?>

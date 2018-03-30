@@ -8,52 +8,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script type="text/javascript" >
- $(document).ready(function(){
-   $("#min").click(function(){
-     $("#ministiedd").toggle();
-     $("#bookshopdb").hide();
-
-   });
-   $("#mins").click(function(){
-     $("#bookshopdb").toggle();
-     $("#ministiedd").hide();
-   });
-   $("#span").click(function(){
-     $(".center").toggle();
-
-   });
-
-
-function changimage(){
-var imagescrs = document.getElementById('aboutimage');
-var imagescr = imagescrs['scr'];
-console.log(imagescr);
-var currentImage = imagescr.substring(imagescr.lastIndexOf("/") + 1, imagescr.lastIndexOf("/")+ 2 );
-var newImage = "/image/" + (Number(currentImage) + 1) + ".jpg";
-document.getElementById('aboutimage').setAttribute("scr", newImage);
-
-}
-
-setInterval(changimage, 500);
-
-console.log(currrentImage + newImage + imageScr);
-
-
-
-
-
-
-
-
-
- });
-
- </script>
-
-
+    <script type="text/javascript" src="myjs/js.js"></script>
     <title> CEG GHANA </title>
   </head>
   <body >
@@ -121,7 +78,7 @@ console.log(currrentImage + newImage + imageScr);
 
     <div class="seache">
       <div class="seachebar">
-        <form class="" action="index.html" method="post">
+        <form class="" action="#" method="post">
           <input type="search" name="seache" placeholder="Seach by ISBN, TItle, or Author" id="seach">
           <input type="submit" name="seache" value="Find a Book" id="seachsubmit">
         </form>
@@ -188,6 +145,7 @@ console.log(currrentImage + newImage + imageScr);
             $binding = $rows['binding'];
             $id = $rows['id'];
             ?>
+
     <div id="book_container">
          <div class="book" id="book" >
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
@@ -226,7 +184,7 @@ console.log(currrentImage + newImage + imageScr);
 <!--  start about us page-->
 
 <div class="aboutus ">
-  <img id="aboutimage" src="image/1.jpg" alt=""  >
+  <img id="aboutimage" src="image/1.jpg" alt="" class="thisisclass" >
   <div class="about">
     <center>
     <p>ABOUT US</p>
@@ -472,7 +430,6 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
     </div>
 </div>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" scr="myjs/main.js"></script>
-
+   <script type="text/javascript" src="myjs/main.js"></script>
   </body>
 </html>

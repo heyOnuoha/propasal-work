@@ -24,7 +24,7 @@
       <div class="menu-bar">
       <div class="left" id="mb">
 
-    <span id="span">  <i class="fas fa-bars" id="menbar"></i> CEG GHANA</span>
+    <span id="span" class="ico">  <i class="fas fa-bars" id="menbar"></i> CEG GHANA</span>
             <div class="image1"> </div>
       </div>
       <div class="center" id="mb">
