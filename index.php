@@ -17,8 +17,18 @@
   <!-- start of top menu -->
 <section>
     <div class="image">
-    <img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image">
-         <div class="overlay" > </div>
+      <div class="image-slider-wrapper">
+        <ul id="image_slider">  
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/1.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+        </ul>
+      </div>
+     
+      <div class="overlay" > </div>
   </div>
 
       <div class="container" >
@@ -27,7 +37,7 @@
       <div class="left" id="mb">
 
         <img src="image/ecghanalogo.png" alt="" id="logo"><span id="span">  <i class="fas fa-bars" id="menbar"></i> EC GHANA</span>
-            <div class="image1"> </div>
+        <div class="image1"> </div>
       </div>
       <div class="center" id="mb">
           <ul>

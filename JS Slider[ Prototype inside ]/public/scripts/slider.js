@@ -4,7 +4,7 @@ var liItems;
 var imageWidth;
 var imageNumber;
 
-var currentImage = 1;
+var currentImage = 0;
 
 function init(){
 

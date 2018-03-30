@@ -10,9 +10,9 @@
 
 //setInterval(changimage, 500);
 
-document.getElementById('bookimages').addEventListener('click', Funct);
-function Funct(){
-    document.getElementById('b').click;
+// document.getElementById('bookimages').addEventListener('click', Funct);
+// function Funct(){
+//     document.getElementById('b').click;
 
-  }
-  console.log("this is connected");
+//   }
+//   console.log("this is connected");
