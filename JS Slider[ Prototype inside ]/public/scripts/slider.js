@@ -17,60 +17,60 @@ function init(){
     slider(ul);
 }
 
-// function slider(ul){ 
-//     animate({
-//         delay:17,
-//         duration: 3000,
-//         delta:function(p){return Math.max(0, -1 + 2 * p)},
-//         step:function(delta){
-//             ul.style.left = '-' + parseInt(currentImage * imageWidth + delta * imageWidth) + 'px';
-//     },
-//         callback:function(){
-//             currentImage++;
-//         // if it doesn’t slied to the last image, keep sliding
-//             if(currentImage < imageNumber-1){
-//                 slider(ul);
-//         }
-//        // if current image it’s the last one, it slides back to the first one
-//             else{
-//                 var leftPosition = (imageNumber - 1) * imageWidth;
-//                // after 2 seconds, call the goBack function to slide to the first image 
-//                 setTimeout(function(){goBack(leftPosition);},2000); 
-//                 setTimeout(function(){slider(ul);}, 4000);
-//             }
-//         }
-//     });
-// }
+function slider(ul){ 
+    animate({
+        delay:17,
+        duration: 3000,
+        delta:function(p){return Math.max(0, -1 + 2 * p)},
+        step:function(delta){
+            ul.style.left = '-' + parseInt(currentImage * imageWidth + delta * imageWidth) + 'px';
+    },
+        callback:function(){
+            currentImage++;
+        // if it doesn’t slied to the last image, keep sliding
+            if(currentImage < imageNumber-1){
+                slider(ul);
+        }
+       // if current image it’s the last one, it slides back to the first one
+            else{
+                var leftPosition = (imageNumber - 1) * imageWidth;
+               // after 2 seconds, call the goBack function to slide to the first image 
+                setTimeout(function(){goBack(leftPosition);},2000); 
+                setTimeout(function(){slider(ul);}, 4000);
+            }
+        }
+    });
+}
 
-// function goBack(leftPosition){
-//     currentImage = 0; 
-//     var id = setInterval(function(){
-//         if(leftPosition >= 0){
-//             ul.style.left = '-' + parseInt(leftPosition) + 'px';
-//             leftPosition -= imageWidth / 10;
-//         }
-//         else{
-//             clearInterval(id);
-//         } 
-//     }, 17);
-// }
+function goBack(leftPosition){
+    currentImage = 0; 
+    var id = setInterval(function(){
+        if(leftPosition >= 0){
+            ul.style.left = '-' + parseInt(leftPosition) + 'px';
+            leftPosition -= imageWidth / 10;
+        }
+        else{
+            clearInterval(id);
+        } 
+    }, 17);
+}
 
-// function animate(opts){
-//     var start = new Date();
-//     var id = setInterval(function(){
-//         var timePassed = new Date() - start;
-//         var progress = timePassed / opts.duration;
-//         if(progress > 1){
-//             progress = 1;
-//         }
-//         var delta = opts.delta(progress);
-//         opts.step(delta);
-//         if (progress == 1){
-//             clearInterval(id);
-//            opts.callback();
-//          }
-//     }, opts.dalay || 17);
-// }
+function animate(opts){
+    var start = new Date();
+    var id = setInterval(function(){
+        var timePassed = new Date() - start;
+        var progress = timePassed / opts.duration;
+        if(progress > 1){
+            progress = 1;
+        }
+        var delta = opts.delta(progress);
+        opts.step(delta);
+        if (progress == 1){
+            clearInterval(id);
+           opts.callback();
+         }
+    }, opts.dalay || 17);
+}
 
 function slideT(liItems) {
 
