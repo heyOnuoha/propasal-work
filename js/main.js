@@ -1,23 +1,4 @@
 
-$(document).ready(function() {
-    
-    // var maxTextLength = 15;
-    // var specialDets = document.getElementsByClassName("specialDet");
-    
-    // for(var i = 0; i < specialDets.length; i++) {
-        
-    //  var specText = specialDets[i].innerHTML;
-    //  var subSpec = specText.substring(0, maxTextLength);
-
-    //     if(specText.length > maxTextLength) {
-    //         specialDets[i].innerHTML = subSpec;
-    //     }
-    // }
-    
-});
-
-
-
 var ul;
 var liItems; 
 var imageWidth;
@@ -27,21 +8,44 @@ var currentImage = 0;
 
 function init(){
 
+    limitText();
+
     ul = document.getElementById('image_slider');
     liItems = ul.children;
     imageNumber = liItems.length;
     imageWidth = liItems[0].children[0].offsetWidth;
     // set ul’s width as the total width of all images in image slider.
     ul.style.width = parseInt(imageWidth * imageNumber) + '%';
+    ul.style.backgroundRepeat = "repeat";
+    ul.style.height = "100%";
     slider(ul);
+}
+
+function limitText() {
+
+    var maxTextLength = 15;
+    var specialDets = document.getElementsByClassName("specialDet");
+    
+    for(var i = 0; i < specialDets.length; i++) {
+        
+     var specText = specialDets[i].innerHTML;
+     var subSpec = specText.substring(0, maxTextLength);
+
+        if(specText.length > maxTextLength) {
+            specialDets[i].innerHTML = subSpec;
+        }
+    }
 }
 
 function slider(ul){ 
     animate({
         delay:17,
         duration: 3000,
-        delta:function(p){return Math.max(0, -1 + 2 * p);},
-        step:function(delta){
+        delta: function(p) {
+            return Math.max(0, -1 + 2 * p);
+        },
+        
+        step:function(delta) {
             ul.style.left = '-' + parseInt(currentImage * imageWidth + delta * imageWidth) + 'px';
     },
         callback:function(){

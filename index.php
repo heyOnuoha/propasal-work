@@ -7,7 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
     <script type="text/javascript" src="myjs/js.js"></script>
@@ -19,12 +19,12 @@
     <div class="image">
       <div class="image-slider-wrapper">
         <ul id="image_slider">  
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
+          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
         </ul>
       </div>
      
@@ -80,10 +80,10 @@
     </div>
     </div>
 <!--      <hr id="hr" >-->
-<section>
+<section id="mid">
     <div class="text">
        <p>Buy a text book . Save a bundle <br>
-      <b>Buy and save up to 90%</b>  </p>
+       <b>Buy and save up to 90%</b>  </p>
     </div>
 
     <div class="seache">
