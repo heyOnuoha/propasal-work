@@ -1,22 +1,36 @@
 <?php include './app/db.php'; ?>
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width , initial-scale= 1" >
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+=======
+
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+>>>>>>> 8dcf13e3e28d6cf66e2fd36be637951dba56f2da
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
+
     <script type="text/javascript" src="myjs/js.js"></script>
+
     <title> CEG GHANA </title>
-  </head>
-  <body >
+</head>
+<body >
   <!-- start of top menu -->
 <section>
     <div class="image">
+<<<<<<< HEAD
       <div class="image-slider-wrapper">
         <ul id="image_slider">  
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop"></li>
@@ -29,8 +43,15 @@
       </div>
      
       <div class="overlay" > </div>
+=======
+    <div class="image-slider-wrapper">
+    <ul id="image_slider">
+    <li><img src="image/2.jpg" alt="bookshop" id="image"></li>
+    </ul>
+    </div>
+    <div class="overlay" > </div>
+>>>>>>> 8dcf13e3e28d6cf66e2fd36be637951dba56f2da
   </div>
-
       <div class="container" >
       <div class="wrapper">
       <div class="menu-bar">
@@ -44,26 +65,26 @@
               <li><a href="">Home</a></li>
               <li><a href="#" id="min">Ministries <i class="down"></i> </a></li>
               <ul id="ministiedd" style="font-size:13px;">
-                 <li><a href=""id="extra">Challenge Bookshops<a/></li>
-                 <li><a href="">Cinema Today (CineVan)<a/></li><br>
-                 <li><a href="">Mobile Bookshops<a/></li><br>
-                 <li><a href="">Local Follow up<a/></li><br>
-                 <li><a href="">Prison Ministry<a/></li><br>
-                 <li><a href="">Prison Chaplain<a/></li><br>
-                 <li><a href="">Young Searchers League<a/></li><br>
-                 <li><a href="">Mail Box Club<a/></li><br>
-                 <li><a href="">Conferences<a/></li><br>
-                 <li><a href="">Counseling Services<a/></li>
+                 <li><a href="#"id="extras" >Challenge Bookshops<a/></li>
+                 <li><a href="#" id="cinematoday">Cinema Today (CineVan)<a/></li><br>
+                 <li><a href="#" id="mobilebookshops">Mobile Bookshops<a/></li><br>
+                 <li><a href="#" id="localfollowup">Local Follow up<a/></li><br>
+                 <li><a href="#" id="prisonministry">Prison Ministry<a/></li><br>
+                 <li><a href="#" id="prisonchaplain">Prison Chaplain<a/></li><br>
+                 <li><a href="#" id="youngsearchersleague">Young Searchers League<a/></li><br>
+                 <li><a href="#" id="mailboxclub">Mail Box Club<a/></li><br>
+                 <li><a href="#" id="conferences">Conferences<a/></li><br>
+                 <li><a href="#" id="counselingservices">Counseling Services<a/></li>
               </ul>
               <li><a href="#" id="mins">Bookshop Locations<i class="down"></i></a></li>
               <ul id="bookshopdb">
-                 <li><a href="" id="extra">Accra<a/></li>
-                 <li><a href="">Tema<a/></li>
-                 <li><a href="">Abetifi<a/></li>
-                 <li><a href="">Kumasi<a/></li>
-                 <li><a href="">Sunyani<a/></li>
-                 <li><a href="">Cape coast<a/></li>
-                 <li><a href="">Tamale<a/></li>
+                 <li><a href="#" id="extra">Accra<a/></li>
+                 <li><a href="#" id="Tema">Tema<a/></li>
+                 <li><a href="#" id="Abetifi">Abetifi<a/></li>
+                 <li><a href="#" id="kumasi">Kumasi<a/></li>
+                 <li><a href="#" id="sunyani">Sunyani<a/></li>
+                 <li><a href="#" id="capeCoast">Cape coast<a/></li>
+                 <li><a href="#" id="Tamale">Tamale<a/></li>
               </ul>
 
               <li><a href="">About</a></li>
@@ -144,7 +165,6 @@
     </div >
     <div class="books">
           <?php
-
           $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 10";
           $result = mysqli_query($connect, $sql);
           while ($rows = mysqli_fetch_array($result)) {
@@ -185,6 +205,10 @@
     }
     ?>
   </div>
+
+  <div class="onhover">
+    
+  </div>
   </div>
 
 </section>
@@ -194,31 +218,30 @@
 <!--  start about us page-->
 
 <div class="aboutus ">
-  <img id="aboutimage" src="image/1.jpg" alt="" class="thisisclass" >
-  <div class="about">
-    <center>
-    <p>ABOUT US</p>
-    <div class="p1">
-    <p class="numbers"> <b>Challenge Enterprises of GHANA </b> </p>
-    <p id="para5">For the past 50 plus years, Challenge Enterprises of Ghana (CEG) has been the leading name in the distribution of Christian literature in the country of Ghana and offers the best in Christian reading.
-    <br>
-  <br>
+<img id="aboutimage" src="image/3.jpg" alt="" class="thisisclass" >
+<div class="about">
+<center>
+<p>ABOUT US</p>
+<div class="p1">
+<p class="numbers"> <b>Challenge Enterprises of GHANA </b> </p>
+<p id="para5">For the past 50 plus years, Challenge Enterprises of Ghana (CEG) has been the leading name in the distribution of Christian literature in the country of Ghana and offers the best in Christian reading.
+  <br><br>
 Challenge distributes over 90% of the Bibles and Christian literature through 18 retail shops across the country as well as through a fleet of eight "cinevans" which also function as mobile bookshops in remote villages in the 10 regions of Ghana. CEG offers all types and versions of the Bible and the widest variety and choice of Biblically balanced literature to the general public and the Christian community in particular.
  <br><br>
  In addition to books and bookstores, Challenge serves through:
 <div class="lists">
-  <ul>
-   <li>a prison ministry in eight prisons</li>
-   <li>free counseling services</li>
-   <li>eight "cinevans" showing gospel films and providing a mobile bookstore <br>
+<ul>
+<li>a prison ministry in eight prisons</li>
+<li>free counseling services</li>
+<li>eight "cinevans" showing gospel films and providing a mobile bookstore <br>
      in all the regions of Ghana</li>
- <li>free Bible corrspondence courses</li>
- <li>free tract distribution</li>
- <li>pastors and church leaders conferences in Accra, Kumasi and Takoradi</li>
+<li>free Bible corrspondence courses</li>
+<li>free tract distribution</li>
+<li>pastors and church leaders conferences in Accra, Kumasi and Takoradi</li>
 </ul>
 </div>
 </p>
-    </div>
+</div>
 
   <!--  <div class="p1">
     <p class="numbers">2</p><span id="span2">Incididunt ut labore et dolore</span>
@@ -228,175 +251,68 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
     <p class="numbers">3</p><span id="span2">Incididunt ut labore et dolore</span>
     <p id="para5">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
   </div>-->
-  </center>
-  </div>
+</center>
+</div>
 </div>
 <!-- section categories -->
 <section>
- <div class="categories">
-   <div class="subcategories">
-     <p id="para6">Top categories:</p>
-     <div class="cate">
+     <div class="categories">
+     <div class="subcategories">
+      <p id="para6">Top categories:</p>
+       <?php
+       $sqli = "SELECT * FROM topcategorie";
+        $sqliresult = mysqli_query($connect, $sqli);
+        while ($row = mysqli_fetch_array($sqliresult)) {
+         ?>
+        <div class="cate">
          <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-     <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-     <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-     <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-     <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-     <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-  <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-	  <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-	  <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-	  <div class="cate">
-         <ul>
-            <p id="title2">Arts & Photography</p>
-            <br>
-              <br>
-           <li> <a href="#">Design & Decorative Arts</a> </li>
-           <li> <a href="#">Art History & Criticism Textbooks</a> </li>
-           <li> <a href="#">Other Media</a> </li>
-           <p id="more">+more</p>
-
-         </ul>
-     </div>
-
-
-     <div class="seeall">
-             <p>see all categories <span style="color:orange; font-weight:bold;">&#187;</span> </p>
-     </div>
+         <p id="title2"><?php echo $row['categorie'] ?></p>
+          <br>
+          <br>
+          <li> <a href="#"><?php echo $row['subcategorie1'] ?></a> </li>
+          <li> <a href="#"><?php echo $row['subcategorie2'] ?></a> </li>
+          <li> <a href="#"><?php echo $row['subcategorie3'] ?></a> </li>
+          <p id="more">+more</p>
+          </ul>
+  </div>
+     <?php
+   }
+  ?>
+  </div>
+  <div class="seeall">
+   <p>see all categories <span style="color:orange; font-weight:bold;">&#187;</span> </p>
    </div>
- </div>
+   <br>
+   </div>
+   </div>
 </section>
 <!-- end section categories -->
 <footer>
- <div class="legone">
- <div class="legswos">
+   <div class="legone">
+   <div class="legswos">
    <div class="firstf">
      <ul>
       <p id="title4">The Company</p>
-       <li> <a href="#">About Us </a></li>
-        <li> <a href="#">Contact us </a></li>
-         <li> <a href="#">Newsroom</a></li>
-         <li> <a href="#">Custom Rental Store</a></li>
-          <li> <a href="#">Affiliates</a></li>
-          <li> <a href="#">Customer care</a></li>
+      <li> <a href="#">About Us </a></li>
+      <li> <a href="#">Contact us </a></li>
+      <li> <a href="#">Newsroom</a></li>
+      <li> <a href="#">Custom Rental Store</a></li>
+      <li> <a href="#">Affiliates</a></li>
+      <li> <a href="#">Customer care</a></li>
 
 
-     </ul>
-   </div>
+    </ul>
+    </div>
 
    <div class="firstf">
-     <ul>
+    <ul>
       <p id="title4">Support</p>
-       <li> <a href="#">Rental Agreement</a></li>
-        <li> <a href="#">Help</a> </li>
-         <li> <a href="#">How to Return</a></li>
-          <li> <a href="#">Extending Rentals</a></li>
-          <li> <a href="#">Shipping Details</a></li>
-          <li> <a href="#">Coupons</a></li>
+      <li> <a href="#">Rental Agreement</a></li>
+      <li> <a href="#">Help</a> </li>
+      <li> <a href="#">How to Return</a></li>
+      <li> <a href="#">Extending Rentals</a></li>
+      <li> <a href="#">Shipping Details</a></li>
+      <li> <a href="#">Coupons</a></li>
 
      </ul>
    </div>
@@ -404,12 +320,12 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
    <div class="firstf">
      <ul>
       <p id="title4">What's Hot</p>
-       <li> <a href="#">Popular Textbooks </a></li>
-        <li> <a href="#">Top Rented Textbooks</a></li>
-         <li> <a href="#">Rent Textbooks</a></li>
-          <li> <a href="#">All Categories</a></li>
-          <li> <a href="#">Top Searches</a></li>
-           <li> <a href="#">Customer Quotes</a></li>
+      <li> <a href="#">Popular Textbooks </a></li>
+      <li> <a href="#">Top Rented Textbooks</a></li>
+      <li> <a href="#">Rent Textbooks</a></li>
+      <li> <a href="#">All Categories</a></li>
+      <li> <a href="#">Top Searches</a></li>
+      <li> <a href="#">Customer Quotes</a></li>
 
      </ul>
    </div>
@@ -417,29 +333,225 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
    <div class="firstf">
      <ul>
       <p id="title4">Follow Us</p>
-       <li> <a href="#"  class="fab fa-facebook" style="font-size:15px">Facebook</a></li>
-        <li> <a href="#"><i class="fab fa-facebook" style="font-size:15px"></i>Twitter </a></li>
-         <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Skype</a></li>
-          <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>instagram</a></li>
-          <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Pinterest</a></li>
-           <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Email </a></li>
+      <li> <a href="#"><i class="fab fa-facebook-f" style="font-size:15px"></i>Facebook</a></li>
+      <li> <a href="#"><i class="fab fa-facebook-f" style="font-size:15px"></i>Twitter </a></li>
+      <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Skype</a></li>
+      <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>instagram</a></li>
+      <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Pinterest</a></li>
+      <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Email </a></li>
 
-     </ul>
+   </ul>
    </div>
    <div class="firstf" id="title5">
 
-     </ul>
+   </ul>
    </div>
 
- </div>
- <br>
- <br>
+  </div>
+   <br><br>
    <hr  id="hr" style="margin-top:100px;" >
     <div class="footerimage">
-      <img src="image/ecghanalogo.png" alt="cegghana logo" ><span style="font-size:9px;">&copy; 2018 Challenge Enterprises of Ghana</span>
+    <img src="image/ecghanalogo.png" alt="cegghana logo" ><span style="font-size:9px;">&copy; 2018 Challenge Enterprises of Ghana</span>
     </div>
+
 </div>
+
+ <!-- pop up -->
+<section>
+    <div class="popupclass">
+    <div class="popup">
+    <div class="popupcontainer">
+    <div class="closepopup">
+    <button type="button" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="textcontent">
+    <p id="popuptitle"></p>
+    <p id="pagecontent"> </p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<script type="text/javascript">
+$(document).ready(function(){
+   $("#min").click(function(){
+    $("#ministiedd").toggle();
+   $("#bookshopdb").hide();
+
+  });
+  $("#mins").click(function(){
+  $("#bookshopdb").toggle();
+  $("#ministiedd").hide();
+     });
+     $("#span").click(function(){
+      $(".center").toggle();
+
+   });
+
+   var maxTextLength = 15;
+   var specialDets = document.getElementsByClassName("specialDet");
+
+   for(var i = 0; i < specialDets.length; i++) {
+
+    var specText = specialDets[i].innerHTML;
+    var subSpec = specText.substring(0, maxTextLength);
+
+     if(specText.length > maxTextLength) {
+         specialDets[i].innerHTML = subSpec;
+      }
+  }
+
+var xhr = new XMLHttpRequest();
+xhr.open("post", "json/headers.json", true);
+
+xhr.onprogress = function(){
+
+}
+xhr.send();
+xhr.onreadystatechange = function(){
+  if (this.readyState == 4 && this.status == 200) {
+    var data = this.responseText;
+    data = JSON.parse(data);
+  var  ministries = data.type.ministries;
+  var bookshoplocations = data.type.bookshopLocations;
+  var  challengeBookshops = ministries[0]["challengeBookshops"];
+  var cinemaToday = ministries[0]["cinemaToday"];
+  var mobileBookshops = ministries[0]["mobileBookshops"];
+  var localFollowUp = ministries[0]["localFollowUp"];
+  var prisonMinistry = ministries[0]["prisonMinistry"];
+  var prisonChaplain = ministries[0]["prisonChaplain"];
+  var youngSearchersLeague = ministries[0]["youngSearchersLeague"];
+  var mailBoxClub = ministries[0]["mailBoxClub"];
+  var conferences = ministries[0]["conferences"];
+  var counselingServices = ministries[0]["counselingServices"];
+//  challengeBookshops = ministriese["contents"];
+  //   document.getElementById('pagecontent').innerHTML = ministrieses;
+    console.log(bookshoplocations[0]["accra"]["title"]);
+
+  $(".close").click(function(){
+    $(".popupclass").css('display', 'none');
+
+  });
+  ///bookshop Locations
+
+  $("#extra").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["accra"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["accra"]["contents"]);
+
+  });
+  $("#Tema").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["tema"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["tema"]["contents"]);
+
+  });
+  $("#Abetifi").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["abetifi"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["abetifi"]["contents"]);
+
+  });
+  $("#Kumasi").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["kumasi"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["kumasi"]["contents"]);
+
+  });
+
+  $("#Sunyani").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["sunyani"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["sunyani"]["contents"]);
+
+  });
+  $("#CapeCoast").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["capeCoast"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["capeCoast"]["contents"]);
+
+  });
+  $("#Tamale").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(bookshoplocations[0]["tamale"]["title"]);
+      $("#pagecontent").html(bookshoplocations[0]["tamale"]["contents"]);
+
+  });
+
+
+  //ministries
+  $("#extras").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(challengeBookshops["title"]);
+      $("#pagecontent").html(challengeBookshops['contents']);
+      $("#popupimage").css('display','block');
+    //  document.getElementById('popupimage').setAttibute("src", challengeBookshops['link']);
+
+  });
+  $("#cinematoday").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(cinemaToday["title"]);
+      $("#pagecontent").html(cinemaToday['contents']);
+
+  });
+  $("#mobilebookshops").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(mobileBookshops["title"]);
+      $("#pagecontent").html(mobileBookshops['contents']);
+
+  });
+  $("#localfollowup").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(localFollowUp["title"]);
+      $("#pagecontent").html(localFollowUp['contents']);
+
+  });
+  $("#prisonministry").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(prisonMinistry["title"]);
+      $("#pagecontent").html(prisonMinistry['contents']);
+
+  });
+  $("#prisonchaplain").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(prisonChaplain["title"]);
+      $("#pagecontent").html(prisonChaplain['contents']);
+
+  });
+  $("#youngsearchersleague").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(youngSearchersLeague["title"]);
+      $("#pagecontent").html(youngSearchersLeague['contents']);
+
+  });
+  $("#mailboxclub").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(mailBoxClub["title"]);
+      $("#pagecontent").html(mailBoxClub['contents']);
+
+  });
+  $("#conferences").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(conferences["title"]);
+      $("#pagecontent").html(conferences['contents']);
+
+  });
+  $("#counselingservices").click(function(){
+     $(".popupclass").css('display', 'block');
+     $("#popuptitle").html(counselingServices["title"]);
+      $("#pagecontent").html(counselingServices['contents']);
+
+  });
+  }
+}
+
+});
+
+</script>
 <script type="text/javascript" src="js/main.js"></script>
-   <script type="text/javascript" src="myjs/main.js"></script>
+<script type="text/javascript" src="myjs/main.js"></script>
   </body>
 </html>

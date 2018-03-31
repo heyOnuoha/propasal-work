@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 var ul;
 var liItems; 
 var imageWidth;
@@ -96,3 +97,10 @@ function animate(opts){
 }
 
 window.onload = init;
+=======
+$(document).ready(function() {
+
+     
+
+});
+>>>>>>> 8dcf13e3e28d6cf66e2fd36be637951dba56f2da

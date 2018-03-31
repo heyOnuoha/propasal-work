@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" type="text/css" href="../css/detail.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--    <link rel="stylesheet" media="screen" href="../indexstyle.css" type="text/css" />-->
-
+      <script type="text/javascript" src="myjs/main.js"></script>
     <title></title>
   </head>
   <body >
@@ -72,19 +72,6 @@ if (isset($_POST['submit'])) {
   </div>
 </section>
 <!-- related books; -->
-<script type="text/javascript">
-$(document).ready(function(){
-  var quantity = document.getElementById('quantity');
-  quantity.addEventListener('change', vtQuantity);
-
-  function vtQuantity(){
-    var price = document.getElementById('price').value;
-     var totalprice = price * quantity.value;
-
-  document.getElementById('price').innerHMTL = totalprice;
-  }
-});
-</script>
 
 <section>
   <div class="realatedbooks">
