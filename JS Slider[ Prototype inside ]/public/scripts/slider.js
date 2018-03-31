@@ -4,7 +4,7 @@ var liItems;
 var imageWidth;
 var imageNumber;
 
-var currentImage = 1;
+var currentImage = 0;
 
 function init(){
 
@@ -70,12 +70,6 @@ function animate(opts){
            opts.callback();
          }
     }, opts.dalay || 17);
-}
-
-function slideT(liItems) {
-
-    var currentLeft = ul[0].offsetWidth;
-    var nextLeft;
 }
 
 window.onload = init;
