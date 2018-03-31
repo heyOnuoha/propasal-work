@@ -7,7 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
     <script type="text/javascript" src="myjs/js.js"></script>
@@ -34,26 +34,26 @@
               <li><a href="">Home</a></li>
               <li><a href="#" id="min">Ministries <i class="down"></i> </a></li>
               <ul id="ministiedd" style="font-size:13px;">
-                 <li><a href=""id="extra">Challenge Bookshops<a/></li>
-                 <li><a href="">Cinema Today (CineVan)<a/></li><br>
-                 <li><a href="">Mobile Bookshops<a/></li><br>
-                 <li><a href="">Local Follow up<a/></li><br>
-                 <li><a href="">Prison Ministry<a/></li><br>
-                 <li><a href="">Prison Chaplain<a/></li><br>
-                 <li><a href="">Young Searchers League<a/></li><br>
-                 <li><a href="">Mail Box Club<a/></li><br>
-                 <li><a href="">Conferences<a/></li><br>
-                 <li><a href="">Counseling Services<a/></li>
+                 <li><a href="#"id="extras" >Challenge Bookshops<a/></li>
+                 <li><a href="#" id="cinematoday">Cinema Today (CineVan)<a/></li><br>
+                 <li><a href="#" id="mobilebookshops">Mobile Bookshops<a/></li><br>
+                 <li><a href="#" id="localfollowup">Local Follow up<a/></li><br>
+                 <li><a href="#" id="prisonministry">Prison Ministry<a/></li><br>
+                 <li><a href="#" id="prisonchaplain">Prison Chaplain<a/></li><br>
+                 <li><a href="#" id="youngsearchersleague">Young Searchers League<a/></li><br>
+                 <li><a href="#" id="mailboxclub">Mail Box Club<a/></li><br>
+                 <li><a href="#" id="conferences">Conferences<a/></li><br>
+                 <li><a href="#" id="counselingservices">Counseling Services<a/></li>
               </ul>
               <li><a href="#" id="mins">Bookshop Locations<i class="down"></i></a></li>
               <ul id="bookshopdb">
-                 <li><a href="" id="extra">Accra<a/></li>
-                 <li><a href="">Tema<a/></li>
-                 <li><a href="">Abetifi<a/></li>
-                 <li><a href="">Kumasi<a/></li>
-                 <li><a href="">Sunyani<a/></li>
-                 <li><a href="">Cape coast<a/></li>
-                 <li><a href="">Tamale<a/></li>
+                 <li><a href="#" id="extra">Accra<a/></li>
+                 <li><a href="#" id="Tema">Tema<a/></li>
+                 <li><a href="#" id="Abetifi">Abetifi<a/></li>
+                 <li><a href="#" id="kumasi">Kumasi<a/></li>
+                 <li><a href="#" id="sunyani">Sunyani<a/></li>
+                 <li><a href="#" id="capeCoast">Cape coast<a/></li>
+                 <li><a href="#" id="Tamale">Tamale<a/></li>
               </ul>
 
               <li><a href="">About</a></li>
@@ -429,7 +429,28 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
       <img src="image/ecghanalogo.png" alt="cegghana logo" ><span style="font-size:9px;">&copy; 2018 Challenge Enterprises of Ghana</span>
     </div>
 </div>
+
+ <!-- pop up -->
+<section>
+    <div class="popupclass">
+      <div class="popup">
+        <div class="popupcontainer">
+          <div class="closepopup">
+          <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+             <div class="textcontent">
+                      <p id="popuptitle">thi is a texte in popoup</p>
+                      <p id="pagecontent">there is the body </p>
+                      <img src="http://www.ceghana.com/images/bookshop2.jpg" alt="challeng bookshop" id="popupimage">
+
+             </div>
+        </div>
+      </div>
+    </div>
+</section>
 <script type="text/javascript" src="js/main.js"></script>
-   <script type="text/javascript" src="myjs/main.js"></script>
+<script type="text/javascript" src="myjs/main.js"></script>
   </body>
 </html>
