@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-
-console.log("this is connected");
-
-<<<<<<< HEAD
-
 var xhr = new XMLHttpRequest();
 xhr.open("post", "json/headers.json", true);
 
@@ -150,11 +145,3 @@ xhr.onreadystatechange = function(){
 }
 
 });
-=======
-// document.getElementById('bookimages').addEventListener('click', Funct);
-// function Funct(){
-//     document.getElementById('b').click;
-
-//   }
-//   console.log("this is connected");
->>>>>>> 397df9a0321d732522dfede053ff6db0d1cfda39
