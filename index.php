@@ -7,7 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
     <script type="text/javascript" src="myjs/js.js"></script>
@@ -18,7 +18,7 @@
 <section>
     <div class="image">
       <div class="image-slider-wrapper">
-        <ul id="image_slider">  
+        <ul id="image_slider">
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
@@ -27,7 +27,7 @@
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
         </ul>
       </div>
-     
+
       <div class="overlay" > </div>
   </div>
 
@@ -453,7 +453,7 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
              <div class="textcontent">
                       <p id="popuptitle">thi is a texte in popoup</p>
                       <p id="pagecontent">there is the body </p>
-                      <img src="http://www.ceghana.com/images/bookshop2.jpg" alt="challeng bookshop" id="popupimage">
+          
 
              </div>
         </div>
