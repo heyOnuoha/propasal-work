@@ -17,6 +17,7 @@
 
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 
+    <script type="text/javascript" src="myjs/js.js"></script>
 
     <title> CEG GHANA </title>
 </head>
@@ -184,6 +185,10 @@
     }
     ?>
   </div>
+
+  <div class="onhover">
+    
+  </div>
   </div>
 
 </section>
@@ -308,8 +313,8 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
    <div class="firstf">
      <ul>
       <p id="title4">Follow Us</p>
-      <li> <a href="#"  class="fab fa-facebook" style="font-size:15px">Facebook</a></li>
-      <li> <a href="#"><i class="fab fa-facebook" style="font-size:15px"></i>Twitter </a></li>
+      <li> <a href="#"><i class="fab fa-facebook-f" style="font-size:15px"></i>Facebook</a></li>
+      <li> <a href="#"><i class="fab fa-facebook-f" style="font-size:15px"></i>Twitter </a></li>
       <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Skype</a></li>
       <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>instagram</a></li>
       <li> <a href="#"><i class="fas fa-facebook-f" style="font-size:15px"></i>Pinterest</a></li>
@@ -342,8 +347,8 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
     </button>
     </div>
     <div class="textcontent">
-    <p id="popuptitle">thi is a texte in popoup</p>
-    <p id="pagecontent">there is the body </p>
+    <p id="popuptitle"></p>
+    <p id="pagecontent"> </p>
 
     </div>
     </div>

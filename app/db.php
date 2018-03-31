@@ -9,5 +9,13 @@
       die("Connection Fail".$connect->connect_error);
    }
 
+   //error handler function
+function customError($errno, $errstr) {
+  header("location:../index.php");
+}
+
+//set error handler
+set_error_handler("customError");
+
 
  ?>

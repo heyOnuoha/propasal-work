@@ -10,14 +10,12 @@ body{
 
 
 }
-
 #title {
-    max-width: 320px;
+    max-width: 120px;
     max-height: 18px;
     overflow: hidden;
-   
-}
 
+}
 .bookimage{
   height: 400px;
   width: 250px;
@@ -94,6 +92,9 @@ font-family: sans-serif;
 
 #booksubmit{
     border: none;
+    border: none;
+    background-color:#26dac3;
+    color: white;
 }
 #bookimages{
 	height:200px;
