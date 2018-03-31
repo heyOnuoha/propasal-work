@@ -20,11 +20,8 @@
       <div class="image-slider-wrapper">
         <ul id="image_slider">
           <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
-          <li><img src="image/2015+Covers+Collage.3.jpg" alt="bookshop" id="image"></li>
+  
+
         </ul>
       </div>
 
@@ -453,7 +450,7 @@ Challenge distributes over 90% of the Bibles and Christian literature through 18
              <div class="textcontent">
                       <p id="popuptitle">thi is a texte in popoup</p>
                       <p id="pagecontent">there is the body </p>
-          
+
 
              </div>
         </div>
