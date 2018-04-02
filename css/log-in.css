@@ -32,24 +32,10 @@ body, html {
     width: 100%;
     box-sizing: border-box;
 /*    border-right: 1px solid #000;*/
-<<<<<<< HEAD
 /*    background: #e74c3c;*/
     background-color:#fff;
-=======
-    background: #ffaf40;
-/*
-    background-image: url("../image/2015+Covers+Collage.3.jpg");
-    background-repeat: repeat;
-    background-position: center;
-*/
-    background-size: 100%;
->>>>>>> favour
 /*    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5) , 0 10px 10px 10px rgba(0, 0, 0, 0.5);*/
 /*    background: linear-gradient(to right, #e74c3c, #ee5253);*/
-}
-
-#left bg {
-    
 }
 
 #top {
@@ -110,14 +96,9 @@ input[type="text"], input[type="password"] {
     float: left;
     width: 60%;   
     margin: 40px auto;
-<<<<<<< HEAD
     margin-left: 10px;
     margin-bottom: 0px;
    
-=======
-    margin-left: 0px;
-    margin-bottom: 0px;  
->>>>>>> favour
 }
 
 #check_box p {

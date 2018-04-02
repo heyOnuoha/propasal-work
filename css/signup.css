@@ -30,16 +30,8 @@ body, html {
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-/*    border-right: 1px solid #000;*/
     background: #fff;
-
-    /* background-image: url("../image/2015+Covers+Collage.3.jpg");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: 100%; */
-
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5) , 0 10px 10px 10px rgba(0, 0, 0, 0.5);
-    /* background: linear-gradient(to right, #e74c3c, #ee5253); */
 }
 
 #container {

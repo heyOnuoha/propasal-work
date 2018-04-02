@@ -1,0 +1,28 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 50%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#frame {
+    width: 100%;
+    height: 100%;
+}
+
+#pic {
+    width: 100%;
+    height: 700px;
+    filter: brightness(25%);
+}
