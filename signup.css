@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     line-height: 20px;
-    
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -90,7 +89,7 @@ input[type="checkbox"] {
 
 #check_box {
     float: left;
-    width: 65%;   
+    width: 65%;
     margin-left: 5px;
 }
 
@@ -113,6 +112,7 @@ input[type="checkbox"] {
     font-weight: 500;
     background: #eb2f06;
     border: none;
+    cursor: pointer;
     border-radius: 4px;
     box-sizing: border-box;
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2) , 0 3px 2px 3px rgba(0, 0, 0, 0.3);
@@ -122,9 +122,9 @@ input[type="checkbox"] {
     border: none;
 }
 
-.btn_login:link {
+/*.btn_login:link {
     border: none;
-}
+}*/
 
 #top_level {
     position: absolute;
@@ -213,4 +213,12 @@ footer {
 
 .clear {
     clear: both;
+}
+.success{
+  color: green;
+  margin-bottom: 20px;
+}
+.errors{
+  color: red;
+  margin-bottom: 20px;
 }

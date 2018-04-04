@@ -10,12 +10,12 @@
    }
 
    //error handler function
-function customError($errno, $errstr) {
-  header("location:../index.php");
-}
+//function customError($errno, $errstr) {
+//  header("location:../index.php");
+//}
 
 //set error handler
-set_error_handler("customError");
+//set_error_handler("customError");
 
 
  ?>

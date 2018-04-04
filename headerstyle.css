@@ -65,25 +65,7 @@ width: 100%;
   margin-left: 3px;
 
 }
-#ministiedd
-{
-}
-#ministiedd li{
-  margin-top: 10px;
-  padding-bottom: 5px;
-  text-align: left;
 
-
-}
-#ministiedd li a:hover{
-
-color: orange;
-}
-#ministiedd a{
-  font-size: 13px;
-  border-bottom: 10px;
-  margin-left: 5px;
-}
 .menu-bar{
 background-color: black;
 padding: 10px 10px;
@@ -110,13 +92,13 @@ padding: 10px 10px;
   width: 120px;
   line-height: 30px;
 }
-#shoppincars{
+#shoppingcart{
   color: red;
-  margin-left: -0px;
+  margin-left: -5px;
   margin-top: -15px;
   border-radius: 250px;
   display: inline-block;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
 
 
@@ -125,19 +107,50 @@ padding: 10px 10px;
 #login{
   border: 1px solid white;
   height: 30px;
-  width:50px;
+  width:60px;
   line-height: 30px;
   border-radius: 5px;
   padding-left: 2px;
-  background-color:#26dac3;
-  border-color: #26dac3;
+border: 1px splod white;
+}
+
+#ministiedd
+{
+position: absolute;
+width: 250px;
+border: 1px solid #212121;
+margin-top: 5px;
+background-color: #212121;
+color: white;
+text-align: left;
+z-index:100;
+display: none;
+padding: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+}
+#ministiedd li{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+
+
+}
+#ministiedd li a:hover{
+
+color: orange;
+}
+#ministiedd a{
+  font-size: 13px;
+  border-bottom: 10px;
+  margin-left: 5px;
 }
 #bookshopdb
 {
 position: absolute;
 display: block;
-width: 120px;
-border: 1px solid black;
+width: 200px;
+border: 1px solid #212121;
 margin-top: 5px;
 background-color: #212121;
 color: white;
@@ -146,6 +159,7 @@ z-index:100;
 margin-left: 155px;
 display: none;
 font-size: 15px;
+border-radius: 5px;
 }
 
 #bookshopdb li{
@@ -160,11 +174,32 @@ font-size: 15px;
 
 color: orange;
 font-size: 15px;
-text-transform: capitalize;
-text-transform: lowercase;
 }
 #bookshopdb a{
   font-size: 13px;
   border-bottom: 10px;
   margin-left: 5px;
+}
+#extra{
+  padding-left: 13px;
+}
+#extras{
+  padding-left: 13px;
+}
+
+@media only screen and (max-width:400px;){
+  #menbar{
+     font-size: 20px;
+     color: white;
+     display: inline-block;
+     margin-right: 25px;
+     border: 1px solid white;
+     padding: 5px;
+     vertical-align: middle;
+     display: inline-block;
+
+  }
+  .center{
+    display: none;
+  }
 }

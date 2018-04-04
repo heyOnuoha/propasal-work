@@ -1,3 +1,4 @@
+<?php include 'app/server.php'; ?>
 <!DOCTYPE html>
 
 <html>
@@ -5,15 +6,15 @@
         <title>CEG - Login</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale = 1" />
-        
+
         <link rel="stylesheet" type="text/css" href="css/log-in.css" media="screen"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
         <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
         <script src="js/log-in.js" type="text/javascript"></script>
-        
-    </head> 
+
+    </head>
     <body>
         <center id="center1">
             <div id="left">
@@ -50,30 +51,32 @@
                     </nav>
                 </header>
                 <div class="trans_area">
-                    
-                </div> 
-                
-                <div id="top_level">                 
+
+                </div>
+
+                <div id="top_level">
                     <div id="container">
                         <img src="image/anyone.png" />
-                        <form action="#" name="form1">
+                        <?php include 'app/errors.php'; ?>
+                          <?php include 'app/success.php'; ?>
+                        <form method="POST"action="log-in.php" name="form1">
                             <div class="form_input">
-                                <input id="mail" class="i_3" type="text" placeholder="E-mail" />
-                            </div>  
+                                <input id="mail" class="i_3" type="text" placeholder="E-mail" name="email" />
+                            </div>
                             <div class="form_input">
-                                <input id="pass" class="i_3" type="password" placeholder="Password" />
+                                <input id="pass" class="i_3" type="password" placeholder="Password" name="password" />
                             </div>
                             <div id="check_box">
-                                <input id="checker" class="color_scheme" type="checkbox" value="Keep me signed in" checked/> 
+                                <input id="checker" class="color_scheme" type="checkbox" value="Keep me signed in" checked/>
                                 <label class="lil_link">Keep me logged in</label>
-                            </div>                      
+                            </div>
                             <button class="btn_login" type="button">Login</button>
-                        </form>   
+                        </form>
                          <div class="clear"></div>
                     </div>
                     <span id="bottom_layer">
                         <p>Don't have an account ? <span class="lil_link"><a href="signup.html">Sign Up</a></span> </p>
-                    </span>  
+                    </span>
                 </div>
             </div>
         </center>

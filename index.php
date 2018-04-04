@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -67,7 +67,7 @@
                  <li><a href="#" id="Tamale">Tamale<a/></li>
               </ul>
 
-              <li><a href="">About</a></li>
+              <li><a href="#aboutus">About</a></li>
               <li><a href="">Contact </a></li>
            </ul>
       </div>
@@ -84,7 +84,7 @@
 <section>
     <div class="text">
        <p>Buy a text book . Save a bundle <br>
-      <b>Buy and save up to 90%</b>  </p>
+      <b>Buy and save up to 20%</b>  </p>
     </div>
 
     <div class="seache">
@@ -161,6 +161,7 @@
       <form class="book_case" method="POST" action="app/detail.php?action=<?php echo $id ?>">
       <i id="load"></i>
       <img src="<?php echo "./image/".$image; ?>" alt="book" id="bookimages" >
+      <!--<p> <textarea name="name" rows="1" cols="" class="title" readonly style="border:none"><?php echo "$title"; ?></textarea> </p>-->
       <p class="title" id="title"><?php echo "$title"; ?></p>
       <p>
         <dl class="det">
@@ -187,7 +188,7 @@
   </div>
 
   <div class="onhover">
-    
+
   </div>
   </div>
 
@@ -197,8 +198,8 @@
 
 <!--  start about us page-->
 
-<div class="aboutus ">
-<img id="aboutimage" src="image/3.jpg" alt="" class="thisisclass" >
+<div class="aboutus " id="aboutus">
+<img id="aboutimage" src="image/3.jpg" alt=""  >
 <div class="about">
 <center>
 <p>ABOUT US</p>
@@ -384,6 +385,8 @@ $(document).ready(function(){
       }
   }
 
+
+
 var xhr = new XMLHttpRequest();
 xhr.open("post", "json/headers.json", true);
 
@@ -409,7 +412,7 @@ xhr.onreadystatechange = function(){
   var counselingServices = ministries[0]["counselingServices"];
 //  challengeBookshops = ministriese["contents"];
   //   document.getElementById('pagecontent').innerHTML = ministrieses;
-    console.log(bookshoplocations[0]["accra"]["title"]);
+  //  console.log(bookshoplocations[0]["accra"]["title"]);
 
   $(".close").click(function(){
     $(".popupclass").css('display', 'none');
