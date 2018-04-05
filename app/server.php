@@ -22,6 +22,7 @@
         array_push($errors, "This email is already in use");
       }
 
+
       if (count($errors) == 0) {
         //encrypte password before inseting
         $password  = md5($password);

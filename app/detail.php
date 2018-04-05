@@ -94,7 +94,7 @@ if (isset($_POST['submit'])) {
         <div class="books">
               <?php
 
-                $sql = "SELECT * FROM book ORDER BY id DESC LIMIT 5";
+                $sql = "SELECT * FROM book ORDER BY id DESC ";
                 $result = mysqli_query($connect, $sql);
                 while ($rows = mysqli_fetch_array($result)) {
                   $image = $rows['image'];
@@ -250,7 +250,6 @@ function _(id){
  document.getElementById('thevalue').addEventListener('change', valuFunct);
   function valuFunct(){
     var thevalues = document.getElementById('thevalue').value;
-    console.log(thevalues);
     if (thevalues == 1) {
       $(".form1").show("slow");
       $(".form2").hide();
@@ -293,6 +292,7 @@ function _(id){
      var state = _('state').value;
      var city = _('city').value;
      var phonenumber = _('phonenumber').value;
+
 
   //  var formdata1 = new FormData();
    //formdata1.append('address', address);

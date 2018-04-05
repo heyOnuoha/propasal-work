@@ -83,12 +83,52 @@ color: gray;
 #booktitle{
   text-align: left;
   font-size: 19px;
-font-family: sans-serif;
+  font-family: sans-serif;
    color: #e74c3c;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-300px);
+  }
+  20% {
+    transform: translateX(-600px);
+  }
+  30% {
+    transform: translateX(-900px);
+  }
+  40% {
+    transform: translateX(-1200px);
+  }
+  50% {
+    transform: translateX(-1500px);
+  }
+  60% {
+    transform: translateX(-1800px);
+  }
+  70% {
+    transform: translateX(-2000px);
+  }
+  80% {
+    transform: translateX(-2300px);
+  }
+  90% {
+    transform: translateX(-2600px);
+  }
+  100% {
+    transform: translateX(-2900px);
+  }
 }
 .realatedbooks{
   margin-top: 35px;
   margin-bottom: 35px;
+  height: 500px;
+  width: 90%;
+  overflow: hidden;
+
 
 }
 
@@ -192,12 +232,22 @@ text-align: left;
   margin-bottom: 2%;
   display: inline-block;
   text-align: left;
+  white-space : nowrap;
+
 
 }
 .book{
 display: inline-block;
-margin-left: 80px;
+margin-left: 37px;
 margin-bottom: 60px;
+white-space : nowrap;
+border:1px solid lightgray;
+padding: 15px 25px;
+border-radius: 5px;
+animation: 2s ease-out 1s 1 slideInFromRight ;
+animation-iteration-count: infinite;
+animation-duration: 50s;
+animation-delay: 5s;
 
 }
 .book img{
@@ -421,4 +471,31 @@ display: none;
 }
 #orderid{
   color: red;
+}
+
+@media only screen and (max-width:1280px){
+  .books{
+    width: 93%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    text-align: left;
+    white-space : nowrap;
+
+
+  }
+  .book{
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  white-space : nowrap;
+  padding: 15px 25px;
+  border-radius: 5px;
+  animation: 2s ease-out 1s 1 slideInFromRight ;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  animation-delay: 5s;
+
+  }
 }

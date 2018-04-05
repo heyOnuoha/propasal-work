@@ -17,10 +17,12 @@
 // create a random orderid
    $orderid  = mt_rand();
 
+   $booktitle = "";
   // insert data into database
 
-   $cart = "INSERT INTO adresse(address, fullname, state, city, phonenumber, paymenttype, carnumber, holdername, cvv, exps, orderid)
-   VALUES('$address', '$fullname', '$state', '$city', '$phonenumber', '$paymenttype', '$cardnumber', '$holdername', '$cvv', '$exps', '$orderid')";
+
+   $cart = "INSERT INTO adresse(address, fullname, state, city, phonenumber, paymenttype, carnumber, holdername, cvv, exps, orderid, booktitle)
+   VALUES('$address', '$fullname', '$state', '$city', '$phonenumber', '$paymenttype', '$cardnumber', '$holdername', '$cvv', '$exps', '$orderid', '$booktitle')";
     if ($connect->query($cart)== TRUE) {
       echo "$orderid";
     }

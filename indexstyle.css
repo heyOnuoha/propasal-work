@@ -256,8 +256,8 @@ margin-bottom: 60px;
 .det dd{
   display:inline-table;
   font-family: sans-serif;
-  color: blue;
-  font-size: 15px;
+  color: gray;
+  font-size: 14px;
 
 }
 dl{
@@ -732,6 +732,33 @@ font-size: 15px;
 }
 #bookimages:hover{
   opacity: 0.5;
+}
+.pagination{
+margin-bottom: 35px;
+margin-top: -30px;
+}
+.pagination li{
+  display: inline-block;
+  list-style-type: none;
+  height: 38px; width: 40px;
+  border: 1px solid lightgray;
+  line-height: 38px;
+  color: white;
+}
+.pagination li:hover{
+  background-color: lightgray;
+}
+.pagination a:hover{
+  color: white;
+}
+.pagination a{
+  text-decoration: none;
+  color: #26dac3;
+}
+.active{background-color: #2980b9; color: white;
+  border: 1px solid #2980b9;}
+.active:hover{
+  background-color:#2980b9;
 }
 @media only screen and (max-width:1280px){
   .container{text-align:none;}

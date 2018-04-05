@@ -11,13 +11,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" type="image/png" href="image/ecghanalogo.png" >
 
     <script type="text/javascript" src="myjs/js.js"></script>
+
+
 
     <title> CEG GHANA </title>
 </head>
@@ -170,8 +172,7 @@
           <dd ><?php echo "$sbn"; ?></dd> -->
           <dt>Author(s):</dt><br>
           <dd class="specialDet"><?php echo "$author"; ?></dd>
-        <!--  <dt>Binding:</dt><br>
-          <dd class="specialDet"><?php echo "$binding"; ?></dd> -->
+
         </dl>
         <div class="btst">
         <input type="submit" name="submit" value="Learne more" id="b"><span>&#187;</span>
@@ -187,12 +188,30 @@
     ?>
   </div>
 
-  <div class="onhover">
+  <center>
+    <div class="pagination">
+      <li ><a href="#">&#171;</a></li>
+    <?php
+       $ls = "SELECT * FROM book ORDER BY id ASC";
+       $Lsresult = mysqli_query($connect, $ls);
+       $lsrow = mysqli_num_rows($Lsresult);
+       $a = $lsrow/10;
+       $a = ceil($a);
+       for ($i=0; $i < $a ; $i++) {
+        ?>
 
-  </div>
-  </div>
+          <li><a href="index.php?page=<?php echo $i ;?>" id="page"><?php echo $i; ?></a></li>
 
+        <?php
+       }
+
+     ?>
+     <li><a href="#">&#187;</a></li>
+   </div>
+  </center>
 </section>
+<script type="text/javascript">
+</script>
 
 <!-- end of body-->
 
